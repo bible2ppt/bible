@@ -1,0 +1,33 @@
+30	1	The sayings of Agur son of Jakeh	an oracle	 [Or Jakeh of Massa] This man declared to Ithiel, to Ithiel and to Ucal	 [Masoretic Text with a different word division of the Hebrew declared, I am weary, O God I am weary, O God, and faint.] 
+30	2	I am the most ignorant of men I do not have a man’s understanding. 
+30	3	I have not learned wisdom, nor have I knowledge of the Holy One. 
+30	4	Who has gone up to heaven and come down? Who has gathered up the wind in the hollow of his hands? Who has wrapped up the waters in his cloak? Who has established all the ends of the earth? What is his name, and the name of his son? Tell me if you know! 
+30	5	Every word of God is flawless he is a shield to those who take refuge in him. 
+30	6	Do not add to his words, or he will rebuke you and prove you a liar. 
+30	7	Two things I ask of you, O LORD do not refuse me before I die	 
+30	8	Keep falsehood and lies far from me give me neither poverty nor riches, but give me only my daily bread. 
+30	9	Otherwise, I may have too much and disown you and say, `Who is the LORD?’ Or I may become poor and steal, and so dishonour the name of my God. 
+30	10	Do not slander a servant to his master, or he will curse you, and you will pay for it. 
+30	11	There are those who curse their fathers and do not bless their mothers 
+30	12	those who are pure in their own eyes and yet are not cleansed of their filth 
+30	13	those whose eyes are ever so haughty, whose glances are so disdainful 
+30	14	those whose teeth are swords and whose jaws are set with knives to devour the poor from the earth, the needy from among mankind. 
+30	15	The leech has two daughters. `Give! Give!’ they cry. There are three things that are never satisfied, four that never say, `Enough!’	 
+30	16	the grave, [Hebrew	 Sheol] the barren womb, land, which is never satisfied with water, and fire, which never says, `Enough!’ 
+30	17	The eye that mocks a father, that scorns obedience to a mother, will be pecked out by the ravens of the valley, will be eaten by the vultures. 
+30	18	There are three things that are too amazing for me, four that I do not understand	 
+30	19	the way of an eagle in the sky, the way of a snake on a rock, the way of a ship on the high seas, and the way of a man with a maiden. 
+30	20	This is the way of an adulteress	 She eats and wipes her mouth and says, `I’ve done nothing wrong.’ 
+30	21	Under three things the earth trembles, under four it cannot bear up	 
+30	22	a servant who becomes king, a fool who is full of food, 
+30	23	an unloved woman who is married, and a maidservant who displaces her mistress. 
+30	24	Four things on earth are small, yet they are extremely wise	 
+30	25	Ants are creatures of little strength, yet they store up their food in the summer 
+30	26	conies [That is, the hyrax or rock badger] are creatures of little power, yet they make their home in the crags 
+30	27	locusts have no king, yet they advance together in ranks 
+30	28	a lizard can be caught with the hand, yet it is found in kings’ palaces. 
+30	29	There are three things that are stately in their stride, four that move with stately bearing	 
+30	30	a lion, mighty among beasts, who retreats before nothing 
+30	31	a strutting cock, a he-goat, and a king with his army around him. [Or king secure against revolt.] 
+30	32	If you have played the fool and exalted yourself, or if you have planned evil, clap your hand over your mouth! 
+30	33	For as churning the milk produces butter, and as twisting the nose produces blood, so stirring up anger produces strife.

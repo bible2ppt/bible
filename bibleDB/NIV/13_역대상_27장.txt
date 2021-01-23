@@ -1,0 +1,34 @@
+27	1	This is the list of the Israelites	heads of families, commanders of thousands and commanders of hundreds, and their officers, who served the king in all that concerned the army divisions that were on duty month by month throughout the year. Each divisi 
+27	2	In charge of the first division, for the first month, was Jashobeam son of Zabdiel. There were 24,000 men in his division. 
+27	3	He was a descendant of Perez and chief of all the army officers for the first month. 
+27	4	In charge of the division for the second month was Dodai the Ahohite Mikloth was the leader of his division. There were 24,000 men in his division. 
+27	5	The third army commander, for the third month, was Benaiah son of Jehoiada the priest. He was chief and there were 24,000 men in his division. 
+27	6	This was the Benaiah who was a mighty man among the Thirty and was over the Thirty. His son Ammizabad was in charge of his division. 
+27	7	The fourth, for the fourth month, was Asahel the brother of Joab his son Zebadiah was his successor. There were 24,000 men in his division. 
+27	8	The fifth, for the fifth month, was the commander Shamhuth the Izrahite. There were 24,000 men in his division. 
+27	9	The sixth, for the sixth month, was Ira the son of Ikkesh the Tekoite. There were 24,000 men in his division. 
+27	10	The seventh, for the seventh month, was Helez the Pelonite, an Ephraimite. There were 24,000 men in his division. 
+27	11	The eighth, for the eighth month, was Sibbecai the Hushathite, a Zerahite. There were 24,000 men in his division. 
+27	12	The ninth, for the ninth month, was Abiezer the Anathothite, a Benjamite. There were 24,000 men in his division. 
+27	13	The tenth, for the tenth month, was Maharai the Netophathite, a Zerahite. There were 24,000 men in his division. 
+27	14	The eleventh, for the eleventh month, was Benaiah the Pirathonite, an Ephraimite. There were 24,000 men in his division. 
+27	15	The twelfth, for the twelfth month, was Heldai the Netophathite, from the family of Othniel. There were 24,000 men in his division. 
+27	16	The officers over the tribes of Israel	 over the Reubenites	 Eliezer son of Zicri over the Simeonites	 Shephatiah son of Maacah 
+27	17	over Levi	 Hashabiah son of Kemuel over Aaron	 Zadok 
+27	18	over Judah	 Elihu, a brother of David over Issachar	 Omri son of Michael 
+27	19	over Zebulun	 Ishmaiah son of Obadiah over Naphtali	 Jerimoth son of Azriel 
+27	20	over the Ephraimites	 Hoshea son of Azaziah over half the tribe of Manasseh	 Joel son of Pedaiah 
+27	21	over the half-tribe of Manasseh in Gilead	 Iddo son of Zechariah over Benjamin	 Jaasiel son of Abner 
+27	22	over Dan	 Azarel son of Jeroham. These were the officers over the tribes of Israel. 
+27	23	David did not take the number of the men twenty years old or less, because the LORD had promised to make Israel as numerous as the stars in the sky. 
+27	24	Joab son of Zeruiah began to count the men but did not finish. Wrath came on Israel on account of this numbering, and the number was not entered in the book [Septuagint Hebrew number] of the annals of King David. 
+27	25	Azmaveth son of Adiel was in charge of the royal storehouses. Jonathan son of Uzziah was in charge of the storehouses in the outlying districts, in the towns, the villages and the watchtowers. 
+27	26	Ezri son of Kelub was in charge of the field workers who farmed the land. 
+27	27	Shimei the Ramathite was in charge of the vineyards. Zabdi the Shiphmite was in charge of the produce of the vineyards for the wine vats. 
+27	28	Baal-Hanan the Gederite was in charge of the olive and sycamore-fig trees in the western foothills. Joash was in charge of the supplies of olive oil. 
+27	29	Shitrai the Sharonite was in charge of the herds grazing in Sharon. Shaphat son of Adlai was in charge of the herds in the valleys. 
+27	30	Obil the Ishmaelite was in charge of the camels. Jehdeiah the Meronothite was in charge of the donkeys. 
+27	31	Jaziz the Hagrite was in charge of the flocks. All these were the officials in charge of King David’s property. 
+27	32	Jonathan, David’s uncle, was a counsellor, a man of insight and a scribe. Jehiel son of Hacmoni took care of the king’s sons. 
+27	33	Ahithophel was the king’s counsellor. Hushai the Arkite was the king’s friend. 
+27	34	Ahithophel was succeeded by Jehoiada son of Benaiah and by Abiathar. Joab was the commander of the royal army.
