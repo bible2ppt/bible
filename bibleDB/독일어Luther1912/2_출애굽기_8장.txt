@@ -1,0 +1,31 @@
+8	1	007	26 Der HERR sprach zu Mose	 Gehe hinein zu Pharao und sprich zu ihm	 So sagt der HERR	 Laß mein Volk 
+8	2	007	27 Wo du dich weigerst 
+8	3	007	28 daß der Strom soll von Fröschen wimmeln; die sollen heraufkriechen und kommen in dein Haus 
+8	4	007	29 und die Frösche sollen auf dich und auf dein Volk und auf alle deine Knechte kriechen." 
+8	5	008	1 Und der HERR sprach zu Mose	 Sage Aaron	 Recke deine Hand aus mit deinem Stabe über die Bäche und Ströme und Seen und laß Frösche über Ägyptenland kommen." 
+8	6	008	2 Und Aaron reckte seine Hand über die Wasser in Ägypten 
+8	7	008	3 Da taten die Zauberer auch also mit ihrem Beschwören und ließen Frösche über Ägyptenland kommen." 
+8	8	008	4 Da forderte Pharao Mose und Aaron und sprach	 Bittet den HERRN für mich 
+8	9	008	5 Mose sprach	 Habe du die Ehre vor mir und bestimme mir 
+8	10	008	6 Er sprach	 Morgen. Er sprach	 Wie du gesagt hast. Auf daß du erfahrest 
+8	12	008	8 Also gingen Mose und Aaron von Pharao; und Mose schrie zu dem HERRN der Frösche halben 
+8	13	008	9 Und der HERR tat 
+8	14	008	10 Und sie häuften sie zusammen 
+8	15	008	11 Da aber Pharao sah 
+8	16	008	12 Und der HERR sprach zu Mose	 Sage Aaron	 Recke deinen Stab aus und schlage in den Staub auf der Erde 
+8	17	008	13 Sie taten also 
+8	18	008	14 Die Zauberer taten auch also mit ihrem Beschwören 
+8	19	008	15 Da sprachen die Zauberer zu Pharao	 Das ist Gottes Finger. Aber das Herz Pharaos ward verstockt 
+8	20	008	16 Und der HERR sprach zu Mose	 Mache dich morgen früh auf und tritt vor Pharao (siehe 
+8	21	008	17 wo nicht 
+8	22	008	18 Und ich will des Tages ein Besonderes tun mit dem Lande Gosen 
+8	23	008	19 und will eine Erlösung setzen zwischen meinem und deinem Volk; morgen soll das Zeichen geschehen." 
+8	24	008	20 Und der HERR tat also 
+8	25	008	21 Da forderte Pharao Mose und Aaron und sprach	 Gehet hin 
+8	26	008	22 Mose sprach	 Das taugt nicht 
+8	27	008	23 Drei Tagereisen wollen wir gehen in die Wüste und dem HERRN 
+8	28	008	24 Pharao sprach	 Ich will euch lassen 
+8	29	008	25 Mose sprach	 Siehe 
+8	30	008	26 Und Mose ging hinaus von Pharao und bat den HERRN." 
+8	31	008	27 Und der HERR tat 
+8	32	008	27 Aber Pharao verhärtete sein Herz auch dieses Mal und ließ das Volk nicht."

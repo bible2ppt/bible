@@ -1,0 +1,29 @@
+6	1	005	20 Und der HERR redete mit Mose und sprach	" 
+6	2	005	21 Wenn jemand sündigen würde und sich damit an dem Herrn vergreifen 
+6	3	005	22 oder wenn er 
+6	4	005	23 wenn's nun geschieht 
+6	6	005	25 Aber für seine Schuld soll er dem HERRN zu dem Priester einen Widder von der Herde ohne Fehl bringen 
+6	7	005	26 So soll ihn der Priester versöhnen vor dem HERRN 
+6	8	006	1 Und der HERR redete mit Mose und sprach	" 
+6	9	006	2 Gebiete Aaron und seinen Söhnen und sprich	 Dies ist das Gesetz des Brandopfers. Das Brandopfer soll brennen auf dem Herd des Altars die ganze Nacht bis an den Morgen 
+6	10	006	3 Und der Priester soll seinen leinenen Rock anziehen und die leinenen Beinkleider an seinen Leib und soll die Asche aufheben 
+6	11	006	4 und soll seine Kleider darnach ausziehen und andere Kleider anziehen und die Asche hinaustragen aus dem Lager an eine reine Stätte." 
+6	12	006	5 Das Feuer auf dem Altar soll brennen und nimmer verlöschen; der Priester soll alle Morgen Holz darauf anzünden und obendarauf das Brandopfer zurichten und das Fett der Dankopfer darauf anzünden." 
+6	13	006	6 Ewig soll das Feuer auf dem Altar brennen und nimmer verlöschen." 
+6	14	006	7 Und das ist das Gesetz des Speisopfers 
+6	15	006	8 Es soll einer abheben eine Handvoll Semmelmehl vom Speisopfer und vom Öl und den ganzen Weihrauch 
+6	16	006	9 Das übrige aber sollen Aaron und seine Söhne verzehren und sollen's ungesäuert essen an heiliger Stätte 
+6	17	006	10 Sie sollen's nicht mit Sauerteig backen; denn es ist ihr Teil 
+6	18	006	11 Was männlich ist unter den Kindern Aarons 
+6	19	006	12 Und der HERR redete mit Mose und sprach	" 
+6	20	006	13 Das soll das Opfer sein Aarons und seiner Söhne 
+6	21	006	14 In der Pfanne mit Öl sollst du es machen und geröstet darbringen; und in Stücken gebacken sollst du solches opfern zum süßen Geruch dem HERRN. {~}" 
+6	22	006	15 Und der Priester 
+6	23	006	16 denn alles Speisopfer eines Priesters soll ganz verbrannt und nicht gegessen werden." 
+6	24	006	17 Und der HERR redete mit Mose und sprach	" 
+6	25	006	18 Sage Aaron und seinen Söhnen und sprich	 Dies ist das Gesetz des Sündopfers. An der Stätte 
+6	26	006	19 Der Priester 
+6	27	006	20 Niemand soll sein Fleisch anrühren 
+6	28	006	21 Und den Topf 
+6	29	006	22 Was männlich ist unter den Priestern 
+6	30	006	23 Aber all das Sündopfer

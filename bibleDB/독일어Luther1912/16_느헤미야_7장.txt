@@ -1,0 +1,73 @@
+7	1	Da wir nun die Mauer gebaut hatten, hängte ich die Türen ein und wurden bestellt die Torhüter, Sänger und Leviten. 
+7	2	Und ich gebot meinem Bruder Hanani und Hananja, dem Burgvogt zu Jerusalem (denn er war ein treuer Mann und gottesfürchtig vor vielen andern), {~} 
+7	3	und sprach zu Ihnen	 Man soll die Tore Jerusalem nicht auftun, bis daß die Sonne heiß wird; und wenn man noch auf der Hut steht, soll man die Türen zuschlagen und verriegeln. Und es wurden Hüter bestellt aus den Bürgern Jerusalems, ein jeglicher auf seine Hut seinem Hause gegenüber. {~} 
+7	4	Die Stadt aber war weit von Raum und groß, aber wenig Volk darin, und die Häuser wurden nicht gebaut. 
+7	5	Und mein Gott gab mir ins Herz, daß ich versammelte die Ratsherren und die Obersten und das Volk, sie zu verzeichnen. Und ich fand das Geschlechtsregister derer, die vorhin heraufgekommen waren, und fand darin geschrieben	 
+7	6	Dies sind die Kinder der Landschaft, die heraufgekommen sind aus der Gefangenschaft, die Nebukadnezar, der König zu Babel, hatte weggeführt, und die wieder gen Jerusalem und nach Juda kamen, ein jeglicher in seine Stadt, {~} 
+7	7	und sind gekommen mit Serubabel, Jesua, Nehemia, Asarja, Raamja, Nahamani, Mardochai, Bilsan, Mispereth, Bigevai, Nehum und Baana. Dies ist die Zahl der Männer vom Volk Israel	 
+7	8	der Kinder Pareos waren zweitausend einhundert und zweiundsiebzig; {~} {~} 
+7	9	der Kinder Sephatja dreihundert und zweiundsiebzig; {~} 
+7	10	der Kinder Arah sechshundert und zweiundfünfzig; {~} 
+7	11	der Kinder Pahath-Moab von den Kindern Jesua und Joab zweitausend achthundert und achtzehn; 
+7	12	der Kinder Elam tausend zweihundert und vierundfünfzig; {~} 
+7	13	der Kinder Satthu achthundert und fünfundvierzig; {~} 
+7	14	der Kinder Sakkai siebenhundert und sechzig; 
+7	15	der Kinder Binnui sechshundert und achtundvierzig; {~} 
+7	16	der Kinder Bebai sechshundert und achtundzwanzig; {~} 
+7	17	der Kinder Asgad zweitausend dreihundert und zweiundzwanzig; {~} {~} 
+7	18	der Kinder Adonikam sechshundert und siebenundsechzig; {~} 
+7	19	der Kinder Bigevai zweitausend und siebenundsechzig; {~} 
+7	20	der Kinder Adin sechshundert und fünfundfünzig; {~} 
+7	21	der Kinder Ater von Hiskia achtundneunzig; {~} 
+7	22	der Kinder Hasum dreihundert und achtundzwanzig; {~} 
+7	23	der Kinder Bezai dreihundert und vierundzwanzig; {~} 
+7	24	der Kinder Hariph hundert und zwölf; 
+7	25	der Kinder von Gibeon fünfundneunzig; {~} 
+7	26	der Männer von Bethlehem und Netopha hundert und achtundachtzig; {~} 
+7	27	der Männer von Anathoth hundert und achtundzwanzig; {~} 
+7	28	der Männer von Beth-Asmaveth zweiundvierzig; {~} 
+7	29	der Männer von Kirjath-Jearim, Kaphira und Beeroth siebenhundert und dreiundvierzig; {~} {~} 
+7	30	der Männer von Rama und Geba sechshundert und einundzwanzig; 
+7	31	der Männer von Michmas hundert und zweiundzwanzig; {~} 
+7	32	der Männer von Beth-El und Ai hundert und dreiundzwanzig; {~} 
+7	33	der Männer vom andern Nebo zweiundfünfzig; {~} 
+7	34	der Kinder des andern Elam tausend zweihundert und vierundfünfzig; {~} 
+7	35	der Kinder Harim dreihundert und zwanzig; 
+7	36	der Kinder von Jericho dreihundert und fünfundvierzig; {~} 
+7	37	der Kinder von Lod, Hadid und Ono siebenhundert und einundzwanzig; {~} 
+7	38	der Kinder von Seena dreitausend und neunhundert und dreißig; {~} 
+7	39	Die Priester	 der Kinder Jedaja, vom Hause Jesua, neunhundert und dreiundsiebzig; {~} 
+7	40	der Kinder Immer tausend und zweiundfünfzig; {~} 
+7	41	der Kinder Pashur tausend zweihundert und siebenundvierzig; {~} 
+7	42	der Kinder Harim tausend und siebzehn; 
+7	43	Die Leviten	 der Kinder Jesua von Kadmiel, von den Kindern Hodavja, vierundsiebzig; {~} 
+7	44	Die Sänger	 der Kinder Asaph hundert und achtundvierzig; {~} 
+7	45	Die Torhüter waren	 die Kinder Sallum, die Kinder Ater, die Kinder Talmon, die Kinder Akkub, die Kinder Hatita, die Kinder Sobai, allesamt hundert und achtunddreißig; {~} 
+7	46	Die Tempelknechte	 die Kinder Ziha, die Kinder Hasupha, die Kinder Tabbaoth, 
+7	47	die Kinder Keros, die Kinder Sia, die Kinder Padon, 
+7	48	die Kinder Lebana, die Kinder Hagaba, die Kinder Salmai, 
+7	49	die Kinder Hanan, die Kinder Giddel, die Kinder Gahar, 
+7	50	die Kinder Reaja, die Kinder Rezin, die Kinder Nekoda, 
+7	51	die Kinder Gassam, die Kinder Usa, die Kinder Paseah, 
+7	52	die Kinder Besai, die Kinder der Meuniter, die Kinder der Nephusiter, 
+7	53	die Kinder Bakbuk, die Kinder Hakupha, die Kinder Harhur, 
+7	54	die Kinder Bazlith, die Kinder Mehida, die Kinder Harsa, 
+7	55	die Kinder Barkos, die Kinder Sisera, die Kinder Themah, 
+7	56	die Kinder Neziah, die Kinder Hatipha. 
+7	57	Die Kinder der Knechte Salomos waren	 die Kinder Sotai, die Kinder Sophereth, die Kinder Perida, 
+7	58	die Kinder Jaala, die Kinder Darkon, die Kinder Giddel, 
+7	59	die Kinder Sephatja, die Kinder Hattil, die Kinder Pochereth von Zebaim, die Kinder Amon. 
+7	60	Aller Tempelknechte und Kinder der Knechte Salomos waren dreihundert und zweiundneunzig; {~} 
+7	61	Und diese zogen auch mit herauf von Thel-Melah, Thel-Harsa, Cherub, Addon und Immer, aber sie konnten nicht anzeigen ihr Vaterhaus noch ihr Geschlecht, ob sie aus Israel wären	 {~} 
+7	62	die Kinder Delaja, die Kinder Tobia und die Kinder Nekoda, sechshundert und zweiundvierzig; {~} 
+7	63	Und von den Priestern waren die Kinder Habaja, die Kinder Hakkoz, die Kinder Barsillai, der aus den Töchtern Barsillais, des Gileaditers, ein Weib nahm und ward nach ihrem Namen genannt. 
+7	64	Diese suchten ihr Geburtsregister; und da sie es nicht fanden, wurden sie untüchtig geachtet zum Priestertum. {~} 
+7	65	Und der Landpfleger sprach zu ihnen, sie sollten nicht essen vom Hocheiligen, bis daß ein Priester aufkäme mit dem Licht und Recht. {~} 
+7	66	Der ganzen Gemeinde wie ein Mann waren zweiundvierzigtausend und dreihundertundsechzig, {~} {~} {~} 
+7	67	ausgenommen ihre Knechte und Mägde; derer waren siebentausend dreihundert und siebenunddreißig, dazu zweihundert und fünfundvierzig Sänger und Sängerinnen. {~} {~} {~} 
+7	68	Und sie hatten siebenhundert und sechsunddreißig Rosse, zweihundert und fünfundvierzig Maultiere, {~} {~} 
+7	69	vierhundert und fünfunddreißig Kamele, sechstausend siebenhundert und zwanzig Esel. {~} {~} 
+7	70	Und etliche Obersten der Vaterhäuser gaben zum Werk. Der Landpfleger gab zum Schatz tausend Goldgulden, fünfzig Becken, fünfhundert und dreißig Priesterröcke. {~} 
+7	71	Und etliche Obersten der Vaterhäuser gaben zum Schatz fürs Werk zwanzigtausend Goldgulden, zweitausend und zweihundert Pfund Silber. {~} {~} 
+7	72	Und das andere Volk gab zwanzigtausend Goldgulden und zweitausend Pfund Silber und siebenundsechzig Priesterröcke. {~} {~} {~} 
+7	73	Und die Priester und die Leviten, die Torhüter, die Sänger und die vom Volk und die Tempelknechte und ganz Israel setzten sich in ihre Städte.

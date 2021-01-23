@@ -1,0 +1,54 @@
+1	1	Und der HERR redete mit Mose in der Wüste Sinai in der Hütte des Stifts am ersten Tage des zweiten Monats im zweiten Jahr, da sie aus Ägyptenland gegangen waren, und sprach	 
+1	2	Nehmet die Summe der ganzen Gemeinde der Kinder Israel nach ihren Geschlechtern und Vaterhäusern und Namen, alles, was männlich ist, von Haupt zu Haupt, {~} 
+1	3	von zwanzig Jahren an und darüber, was ins Heer zu ziehen taugt in Israel; ihr sollt sie zählen nach ihren Heeren, du und Aaron. 
+1	4	Und sollt zu euch nehmen je vom Stamm einen Hauptmann über sein Vaterhaus. {~} 
+1	5	Dies sind die Namen der Hauptleute, die neben euch stehen sollen	 von Ruben sei Elizur, der Sohn Sedeurs; 
+1	6	von Simeon sei Selumiel, der Sohn Zuri-Saddais; 
+1	7	von Juda sei Nahesson, der Sohn Amminadabs; 
+1	8	von Isaschar sei Nathanael, der Sohn Zuars; 
+1	9	von Sebulon sei Eliab, der Sohn Helons; 
+1	10	von den Kindern Josephs	 von Ephraim sei Elisama, der Sohn Ammihuds; von Manasse sei Gamliel, der Sohn Pedazurs; 
+1	11	von Benjamin sei Abidan, der Sohn des Gideoni; 
+1	12	von Dan sei Ahieser, der Sohn Ammi-Saddais; 
+1	13	von Asser sei Pagiel, der Sohn Ochrans; 
+1	14	von Gad sei Eljasaph, der Sohn Deguels; 
+1	15	von Naphthali sei Ahira, der Sohn Enans. 
+1	16	Das sind die Vornehmsten der Gemeinde, die Fürsten unter den Stämmen ihrer Väter, die da Häupter über die Tausende in Israel waren. 
+1	17	Und Mose und Aaron nahmen sie zu sich, wie sie da mit Namen genannt sind, 
+1	18	und sammelten auch die ganze Gemeinde am ersten Tage des zweiten Monats und rechneten nach ihrer Geburt, nach ihren Geschlechtern und Vaterhäusern und Namen, von zwanzig Jahren an und darüber, von Haupt zu Haupt, {~} 
+1	19	wie der HERR dem Mose geboten hatte, und zählten sie in der Wüste Sinai. 
+1	20	Der Kinder Ruben, des ersten Sohnes Israels, nach ihrer Geburt und Geschlecht, ihren Vaterhäusern und Namen, von Haupt zu Haupt, alles, was männlich war, von zwanzig Jahren und darüber, und ins Heer zu ziehen taugte, {~} 
+1	21	wurden gezählt vom Stamme Ruben sechsundvierzigtausend und fünfhundert. 
+1	22	Der Kinder Simeon nach ihrer Geburt und Geschlecht, ihren Vaterhäusern, Zahl und Namen, von Haupt zu Haupt, alles, was männlich war, von zwanzig Jahren und darüber, und ins Heer zu ziehen taugte, {~} 
+1	23	wurden gezählt zum Stamm Simeon neunundfünfzigtausend und dreihundert. 
+1	24	Der Kinder Gad nach ihrer Geburt und Geschlecht, ihren Vaterhäusern und Namen, von zwanzig Jahren und darüber, und ins Heer zu ziehen taugte, {~} 
+1	25	wurden gezählt zum Stamm Gad fünfundvierzigtausend sechshundertundfünfzig. 
+1	26	Der Kinder Juda nach ihrer Geburt und Geschlecht, ihren Vaterhäusern und Namen, von zwanzig Jahren und darüber, was ins Heer zu ziehen taugte, {~} 
+1	27	wurden gezählt zum Stamm Juda vierundsiebzigtausend und sechshundert. 
+1	28	Der Kinder Isaschar nach ihrer Geburt und Geschlecht, ihren Vaterhäusern und Namen, von zwanzig Jahren und darüber, was ins Heer zu ziehen taugte, {~} 
+1	29	wurden gezählt zum Stamm Isaschar vierundfünfzigtausend und vierhundert. 
+1	30	Der Kinder Sebulon nach ihrer Geburt und Geschlecht, ihren Vaterhäusern und Namen, von zwanzig Jahren und darüber, was ins Heer zu ziehen taugte, {~} 
+1	31	wurden gezählt zum Stamm Sebulon siebenundfünfzigtausend und vierhundert. 
+1	32	Der Kinder Joseph von Ephraim nach ihrer Geburt und Geschlecht, ihren Vaterhäusern und Namen, von zwanzig Jahren und darüber, was ins Heer zu ziehen taugte, {~} {~} 
+1	33	wurden gezählt zum Stamm Ephraim vierzigtausend und fünfhundert. 
+1	34	Der Kinder Manasse nach ihrer Geburt und Geschlecht, ihren Vaterhäusern und Namen, von zwanzig Jahren und darüber, was ins Heer zu ziehen taugte, {~} 
+1	35	wurden zum Stamm Manasse gezählt zweiunddreißigtausend und zweihundert. 
+1	36	Der Kinder Benjamin nach ihrer Geburt und Geschlecht, ihren Vaterhäusern und Namen, von zwanzig Jahren und darüber, was ins Heer zu ziehen taugte, {~} 
+1	37	wurden zum Stamm Benjamin gezählt fünfunddreißigtausend und vierhundert. 
+1	38	Der Kinder Dan nach ihrer Geburt und Geschlecht, ihren Vaterhäusern und Namen, von zwanzig Jahren und darüber, was ins Heer zu ziehen taugte, {~} 
+1	39	wurden gezählt zum Stamme Dan zweiundsechzigtausend und siebenhundert. 
+1	40	Der Kinder Asser nach ihrer Geburt und Geschlecht, ihren Vaterhäusern und Namen, von zwanzig Jahren und darüber, was ins Heer zu ziehen taugte, {~} 
+1	41	wurden gezählt zum Stamm Asser einundvierzigtausend und fünfhundert. 
+1	42	Der Kinder Naphthali nach ihrer Geburt und Geschlecht, ihren Vaterhäusern und Namen, von zwanzig Jahren und darüber, was ins Heer zu ziehen taugte, {~} 
+1	43	wurden zum Stamm Naphthali gezählt dreiundfünfzigtausend und vierhundert. 
+1	44	Dies sind, die Mose und Aaron zählten samt den zwölf Fürsten Israels, deren je einer über ein Vaterhaus war. 
+1	45	Und die Summe der Kinder Israel nach ihrer Geburt und Geschlecht, ihren Vaterhäusern und Namen, von zwanzig Jahren und darüber, was ins Heer zu ziehen taugte in Israel, 
+1	46	war sechsmal hunderttausend und dreitausend fünfhundertundfünfzig. {~} 
+1	47	Aber die Leviten nach ihrer Väter Stamm wurden nicht mit darunter gezählt. 
+1	48	Und der HERR redete mit Mose und sprach	 
+1	49	Den Stamm Levi sollst du nicht zählen noch ihre Summe nehmen unter den Kindern Israel, 
+1	50	sondern du sollst sie ordnen zur Wohnung des Zeugnisses und zu allem Geräte und allem, was dazu gehört. Und sie sollen die Wohnung tragen und alles Gerät und sollen sein pflegen und um die Wohnung her sich lagern. 
+1	51	Und wenn man reisen soll, so sollen die Leviten die Wohnung abnehmen. Wenn aber das Heer zu lagern ist, sollen sie die Wohnung aufschlagen. Und wo ein Fremder sich dazumacht, der soll sterben. 
+1	52	Die Kinder Israel sollen sich lagern, ein jeglicher in sein Lager und zu dem Panier seiner Schar. 
+1	53	Aber die Leviten sollen sich um die Wohnung des Zeugnisses her lagern, auf daß nicht ein Zorn über die Gemeinde der Kinder Israel komme; darum sollen die Leviten des Dienstes warten an der Wohnung des Zeugnisses. 
+1	54	Und die Kinder Israel taten alles, wie der HERR dem Mose geboten hatte. {~}

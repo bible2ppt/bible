@@ -1,0 +1,24 @@
+12	1	Dies sind die Könige des Landes, die die Kinder Israel schlugen und nahmen ihr Land ein jenseit des Jordans gegen der Sonne Aufgang von dem Bach Arnon an bis an den Berg Hermon und das ganze Gefilde gegen Morgen	 
+12	2	Sihon, der König der Amoriter, der zu Hesbon wohnte und herrschte von Aroer an, das am Ufer liegt des Bachs Arnon, und von der Mitte des Tals an und über das halbe Gilead bis an den Bach Jabbok, der die Grenze ist der Kinder Ammon, 
+12	3	und über das Gefilde bis an das Meer Kinneroth gegen Morgen und bis an das Meer im Gefilde, nämlich das Salzmeer, gegen Morgen, des Weges gen Beth-Jesimoth, und gegen Mittag unten an den Abhängen des Gebirges Pisga. 
+12	4	Dazu das Gebiet des Königs Og von Basan, der noch von den Riesen übrig war und wohnte zu Astharoth und Edrei 
+12	5	und herrschte über den Berg Hermon, über Salcha und über ganz Basan bis an die Grenze der Gessuriter und Maachathiter und über das halbe Gilead, da die Grenze war Sihons, des Königs zu Hesbon. 
+12	6	Mose, der Knecht des HERRN, und die Kinder Israel schlugen sie. Und Mose, der Knecht des HERRN, gab ihr Land einzunehmen den Rubenitern, Gaditer und dem halben Stamm Manasse. 
+12	7	Dies sind die Könige des Landes, die Josua schlug und die Kinder Israel, diesseit des Jordans gegen Abend, von Baal-Gad an auf der Ebene beim Berge Libanon bis an das kahle Gebirge, das aufsteigt gen Seir (und Josua gab das Land den Stämmen Israels einzunehmen, einem jeglichen sein Teil, 
+12	8	was auf den Gebirgen, in den Gründen, Gefilden, an den Abhängen, in der Wüste und gegen Mittag war	 die Hethiter, Amoriter, Kanaaniter, Pheresiter, Heviter und Jebusiter)	 
+12	9	der König zu Jericho, der König zu Ai, das zur Seite an Beth-el liegt, 
+12	10	der König zu Jerusalem, der König zu Hebron, {~} 
+12	11	der König zu Jarmuth, der König zu Lachis, {~} 
+12	12	der König zu Eglon, der König zu Geser, {~} 
+12	13	der König zu Debir, der König zu Geder, {~} 
+12	14	der König zu Horma, der König zu Arad, {~} 
+12	15	der König zu Libna, der König zu Adullam, {~} 
+12	16	der König zu Makkeda, der König zu Beth-El, {~} 
+12	17	der König zu Thappuah, der König zu Hepher, {~} 
+12	18	der König zu Aphek, der König zu Lasaron, {~} 
+12	19	der König zu Madon, der König zu Hazor, {~} 
+12	20	der König zu Simron-Meron, der König zu Achsaph, {~} 
+12	21	der König zu Thaanach, der König zu Megiddo, {~} 
+12	22	der König zu Kedes, der König zu Jokneam am Karmel, {~} 
+12	23	der König zu Naphoth-Dor, der König der Heiden zu Gilgal, {~} 
+12	24	der König zu Thirza. Das sind einunddreißig Könige. {~}

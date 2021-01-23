@@ -1,0 +1,70 @@
+2	1	Dies sind die Kinder der Landschaft, die heraufzogen aus der Gefangenschaft, die Nebukadnezar, der König zu Babel, hatte gen Babel geführt und die wieder gen Jerusalem und nach Juda kamen, ein jeglicher in seine Stadt, {~} 
+2	2	und kamen mit Serubabel, Jesua, Nehemia, Seraja, Reelaja, Mardochai, Bilsa, Mispar, Bigevai, Rehum und Baana. Dies ist nun die Zahl der Männer des Volkes Israel	 
+2	3	der Kinder Parevs zweitausend hundertundzweiundsiebzig; {~} 
+2	4	der Kinder Sephatja dreihundert und zweiundsiebzig; {~} 
+2	5	der Kinder Arah siebenhundert und fünfundsiebzig; {~} 
+2	6	der Kinder Pahath-Moab, von den Kindern Jesua, Joab, zweitausend achthundertundzwölf; {~} {~} 
+2	7	der Kinder Elam tausend zweihundertvierundfünfzig; {~} {~} 
+2	8	der Kinder Satthu neunhundert und fünfundvierzig; {~} 
+2	9	der Kinder Sakkai siebenhundert und sechzig; 
+2	10	der Kinder Bani sechshundert und zweiundvierzig; {~} 
+2	11	der Kinder Bebai sechshundert und dreiundzwanzig; {~} 
+2	12	der Kinder Asgad tausend zweihundert und zweiundzwanzig; {~} 
+2	13	der Kinder Adonikam sechshundert und sechsundsechzig; {~} 
+2	14	der Kinder Bigevai zweitausend und sechsundfünfzig; {~} 
+2	15	der Kinder Adin vierhundert und vierundfünfzig; {~} 
+2	16	der Kinder Ater von Hiskia achtundneunzig; {~} 
+2	17	der Kinder Bezai dreihundert und dreiundzwanzig; {~} 
+2	18	der Kinder Jorah hundertundzwölf; {~} {~} 
+2	19	der Kinder Hasum zweihundert und dreiundzwanzig; {~} 
+2	20	der Kinder von Gibbar fünfundneunzig; {~} 
+2	21	der Kinder von Bethlehem hundertdreiundzwanzig; {~} {~} 
+2	22	der Männer von Netopha sechsundfünfzig; {~} 
+2	23	der Männer von Anathoth hundertachtundzwanzig; {~} {~} 
+2	24	der Kinder von Asmaveth zweihundertvierzig; {~} 
+2	25	der Kinder von Kirjath-Arim, Kaphira und Beeroth siebenhundert und dreiundvierzig; {~} 
+2	26	der Kinder von Rama und Geba sechshundert und einundzwanzig; {~} 
+2	27	der Männer von Michmas hundertzweiundzwanzig; {~} {~} 
+2	28	der Männer von Beth-El und Ai zweihundert und dreiundzwanzig; {~} 
+2	29	der Kinder von Nebo zweiundfünfzig; {~} 
+2	30	der Kinder Magbis hundertsechsundfünfzig; {~} {~} 
+2	31	der Kinder des andern Elam tausendzweihundert und vierundfünfzig; {~} {~} 
+2	32	der Kinder Harim dreihundertundzwanzig; {~} 
+2	33	der Kinder von Lod, Hadid und Ono siebenhundert und fünfundzwanzig; {~} 
+2	34	der Kinder von Jericho dreihundert und fünfundvierzig; {~} 
+2	35	der Kinder von Senaa dreitausend und sechshundertunddreißig. {~} {~} 
+2	36	Der Priester	 der Kinder Jedaja vom Hause Jesua neunhundert und dreiundsiebzig; {~} 
+2	37	der Kinder Immer tausend und zweiundfünfzig; {~} 
+2	38	der Kinder Pashur tausendzweihundert und siebenundvierzig; {~} {~} 
+2	39	der Kinder Harim tausend und siebzehn. 
+2	40	Der Leviten	 der Kinder Jesua und Kadmiel von den Kindern Hodavja vierundsiebzig. {~} 
+2	41	Der Sänger	 der Kinder Asaph hundertachtundzwanzig. {~} {~} 
+2	42	der Kinder der Torhüter	 die Kinder Sallum, die Kinder Ater, die Kinder Talmon, die Kinder Akkub, die Kinder Hatita und die Kinder Sobai, allesamt hundertneununddreißig. {~} {~} 
+2	43	Der Tempelknechte	 die Kinder Ziha, die Kinder Hasupha, die Kinder Tabbaoth, 
+2	44	die Kinder Keros, die Kinder Siaha, die Kinder Padon, 
+2	45	die Kinder Lebana, die Kinder Hagaba, die Kinder Akkub, 
+2	46	die Kinder Hagab, die Kinder Samlai, die Kinder Hanan, 
+2	47	die Kinder Giddel, die Kinder Gahar, die Kinder Reaja, 
+2	48	die Kinder Rezin, die Kinder Nekoda, die Kinder Gassam, 
+2	49	die Kinder Usa, die Kinder Paseah, die Kinder Beasi, 
+2	50	die Kinder Asna, die Kinder der Meuniter, die Kinder der Nephusiter, 
+2	51	die Kinder Bakbuk, die Kinder Hakupha, die Kinder Harhur, 
+2	52	die Kinder Bazluth, die Kinder Mehida, die Kinder Harsa, 
+2	53	die Kinder Barkos, die Kinder Sisera, die Kinder Themah, 
+2	54	die Kinder Neziah, die Kinder Hatipha. 
+2	55	Die Kinder der Knechte Salomos	 Die Kinder Sotai, die Kinder Sophereth, die Kinder Peruda, 
+2	56	die Kinder Jaala, die Kinder Darkon, die Kinder Giddel, 
+2	57	die Kinder Sephatja, die Kinder Hattil, die Kinder Pochereth von Zebaim, die Kinder der Ami. 
+2	58	Aller Tempelknechte und Kinder der Knechte Salomos waren zusammen dreihundert und zweiundneunzig. {~} 
+2	59	Und diese zogen auch mit herauf von Thel-Melah, Thel-Harsa, Cherub, Addon und Immer, aber sie konnten nicht anzeigen ihr Vaterhaus noch ihr Geschlecht, ob sie aus Israel wären	 {~} 
+2	60	die Kinder Delaja, die Kinder Tobia, die Kinder Nekoda, sechshundert und zweiundfünfzig. {~} 
+2	61	Und von den Kindern der Priester	 die Kinder Habaja, die Kinder Hakkoz, die Kinder Barsillais, der aus den Töchtern Barsillais, des Gileaditers, ein Weib nahm und ward unter ihrem Namen genannt. 
+2	62	Die suchten ihre Geburtsregister, und fanden keine; darum wurden sie untüchtig geachtet zum Priestertum. {~} 
+2	63	Und der Landpfleger sprach zu ihnen, sie sollten nicht essen vom Hochheiligen, bis ein Priester aufstände mit dem Licht und Recht. {~} 
+2	64	Der ganzen Gemeinde wie ein Mann waren zweiundvierzigtausend und dreihundertundsechzig. {~} {~} {~} 
+2	65	ausgenommen ihre Knechte und Mägde, derer waren siebentausend dreihundert und siebenunddreißig, dazu zweihundert Sänger und Sängerinnen. {~} {~} 
+2	66	Und hatten siebenhundert und sechsunddreißig Rosse, zweihundert und fünfundvierzig Maultiere, {~} {~} 
+2	67	vierhundert und fünfunddreißig Kamele und sechstausend und siebenhundertzwanzig Esel. {~} {~} {~} 
+2	68	Und etliche Oberste der Vaterhäuser, da sie kamen zum Hause des Herrn zu Jerusalem, gaben sie freiwillig zum Hause Gottes, daß man's setzte auf seine Stätte, 
+2	69	und gaben nach ihrem Vermögen zum Schatz fürs Werk einundsechzigtausend Goldgulden und fünftausend Pfund Silber und hundert Priesterröcke. {~} {~} {~} {~} 
+2	70	Also setzten sich die Priester und die Leviten und die vom Volk und die Sänger und die Torhüter und die Tempelknechte in ihre Städte und alles Israel in seine Städte.

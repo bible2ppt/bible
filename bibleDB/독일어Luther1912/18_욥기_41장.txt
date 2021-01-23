@@ -1,0 +1,34 @@
+41	1	040	25 Kannst du den Leviathan ziehen mit dem Haken und seine Zunge mit einer Schnur fassen?" 
+41	2	040	26 Kannst du ihm eine Angel in die Nase legen und mit einem Stachel ihm die Backen durchbohren?" 
+41	3	040	27 Meinst du 
+41	4	040	28 Meinst du 
+41	5	040	29 Kannst du mit ihm spielen wie mit einem Vogel oder ihn für deine Dirnen anbinden?" 
+41	6	040	30 Meinst du die Genossen werden ihn zerschneiden 
+41	7	040	31 Kannst du mit Spießen füllen seine Haut und mit Fischerhaken seinen Kopf?" 
+41	8	040	32 Wenn du deine Hand an ihn legst 
+41	9	040	1 Siehe 
+41	10	041	2 Niemand ist so kühn 
+41	11	041	3 Wer hat mir etwas zuvor getan 
+41	12	041	4 Dazu muß ich nun sagen 
+41	13	041	5 Wer kann ihm sein Kleid aufdecken? und wer darf es wagen 
+41	14	041	6 Wer kann die Kinnbacken seines Antlitzes auftun? Schrecklich stehen seine Zähne umher." 
+41	15	041	7 Seine stolzen Schuppen sind wie feste Schilde 
+41	16	041	8 Eine rührt an die andere 
+41	17	041	9 Es hängt eine an der andern 
+41	18	041	10 Sein Niesen glänzt wie ein Licht; seine Augen sind wie die Wimpern der Morgenröte." 
+41	19	041	11 Aus seinem Munde fahren Fackeln 
+41	20	041	12 Aus seiner Nase geht Rauch wie von heißen Töpfen und Kesseln." 
+41	21	041	13 Sein Odem ist wie eine lichte Lohe 
+41	22	041	14 Auf seinem Hals wohnt die Stärke 
+41	23	041	15 Die Gliedmaßen seines Fleisches hangen aneinander und halten hart an ihm 
+41	24	041	16 Sein Herz ist so hart wie ein Stein und so fest wie ein unterer Mühlstein." 
+41	25	041	17 Wenn er sich erhebt 
+41	26	041	18 Wenn man zu ihm will mit dem Schwert 
+41	27	041	19 Er achtet Eisen wie Stroh 
+41	28	041	20 Kein Pfeil wird ihn verjagen; die Schleudersteine sind ihm wie Stoppeln." 
+41	29	041	21 Die Keule achtet er wie Stoppeln; er spottet der bebenden Lanze." 
+41	30	041	22 Unten an ihm sind scharfe Scherben; er fährt wie mit einem Dreschwagen über den Schlamm." 
+41	31	041	23 Er macht 
+41	32	041	24 Nach ihm leuchtet der Weg; er macht die Tiefe ganz grau." 
+41	33	041	25 Auf Erden ist seinesgleichen niemand; er ist gemacht 
+41	34	041	26 Er verachtet alles

@@ -1,0 +1,13 @@
+30	1	030	2 Und Mose redete mit den Fürsten der Stämme der Kinder Israel und sprach	 das ist's 
+30	2	030	3 Wenn jemand dem HERRN ein Gelübde tut oder einen Eid schwört 
+30	3	030	4 Wenn ein Weib dem HERRN ein Gelübde tut und sich verbindet 
+30	5	030	6 Wo aber ihr Vater ihr wehrt des Tages 
+30	6	030	7 Wird sie aber eines Mannes und hat ein Gelübde auf sich oder ist ihr aus ihren Lippen ein Verbündnis entfahren über ihre Seele 
+30	8	030	9 Wo aber ihr Mann ihr wehrt des Tages 
+30	9	030	10 Das Gelübde einer Witwe und Verstoßenen 
+30	10	030	11 Wenn eine in ihres Mannes Hause gelobt oder sich mit einem Eide verbindet über ihre Seele 
+30	12	030	13 Macht's aber ihr Mann des Tages los 
+30	13	030	14 Alle Gelübde und Eide 
+30	14	030	15 wenn er dazu schweigt von einem Tag zum andern 
+30	15	030	16 wird er's aber aufheben 
+30	16	030	17 Das sind die Satzungen
