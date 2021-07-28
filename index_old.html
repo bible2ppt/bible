@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PPT MAKER 2.0</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pptxgenjs@3.6.0/dist/pptxgen.bundle.js"></script>
+    <!--script src="https://cdn.jsdelivr.net/npm/pptxgenjs@3.4.0/dist/pptxgen.bundle.js"></script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alasql/0.6.2/alasql.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+
+    <style type="text/css">
+        .outlineText {
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+
+        .ui .table { 
+            height: 190px;
+        }
+
+        .active.ui.button {
+            background-color: #999999;
+        }
+
+        .ui.selection.dropdown {
+            padding: 10px;
+        }        
+    </style>
+
+</head>
+
+<body>
+    <div class="ui container"></div>
+
+    <!-- BIBLE to PPT -->
+
+    <div class="ui raised padded container segment">
+
+        <div class="ui attached message">
+            <h2 class="ui blue header">
+                <i class="book icon"></i>
+                <div class="content">
+                    Bible to PPT
+                    <div class="sub header">Version 1.1.3</div>
+                </div>
+            </h2>
+        </div>
+
+        <div class="ui attached fluid equal width segment form">
+            <div class="fields">
+
+                <div class="field">
+                    <label>VERSION</label>
+                    <select name="loadVersion" id="loadVersion" class="ui search selection dropdown">
+                        <option value="개역개정4판">개역개정4판</option>
+                        <option value="공동번역">공동번역</option>
+                        <option value="현대어성경">현대어성경</option>
+                        <option value="현대인의성경">현대인의성경</option>
+                        <option value="개역한글">개역한글</option>
+                        <option value="표준새번역">표준새번역</option>
+                        <option value="새번역">새번역</option>
+                        <option value="쉬운성경">쉬운성경</option>
+                        <option value="우리말성경">우리말성경</option>
+                        <option value="공동번역_개정판">공동번역_개정판</option>
+                        <option value="카톨릭성경">카톨릭성경</option>
+                        <option value="NIV">NIV</option>
+                        <option value="KJV">KJV</option>
+                        <option value="중국어화합본(간체)">중국어 中文和合本简體</option>
+                        <option value="일본어(신공동역)">일본어 新共同訳聖書</option>
+                        <option value="대만성경">대만어 台語漢字羅馬本</option>
+                        <option value="독일어Luther1912">독일어 Luther 1912</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>TESTAMENT</label>
+                    <select id="oldAndNew" onchange="oldAndNewChange()" class="ui search selection dropdown">
+                        <option value='전체'>신,구약 전체</option>
+                        <option value='구약'>구약성경 (39)</option>
+                        <option value='신약'>신약성경 (27)</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>BOOK</label>
+                    <select id="book" onchange="bookChange()" class="ui search selection dropdown">
+                        <option>--책이름--</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>CHAPTER</label>
+                    <select id="chapter" onchange="chapterChange()" class="ui search selection dropdown">
+                        <option>--장--</option>
+                    </select>
+                </div>
+
+            </div> <!-- fields -->
+
+            <div class="ui stackable grid">
+                <div class="four wide column">
+
+                    <div class="ui checkbox">
+                        <input type="checkbox" name="changeWord"  tabindex="0" class="hidden" id="God">
+                        <label>하느님 ▶ 하나님</label>
+                    </div><br />
+                    <div class="ui checkbox">
+                        <input type="checkbox" name="changeWord" id="Jehovah">
+                        <label>야훼 ▶ 여호와</label>
+                    </div><br />
+                    <div class="ui checkbox">
+                        <input type="checkbox" name="changeWord" id="Baptism">
+                        <label>세례 ▶ 침례</label>
+                    </div><br />
+
+                </div>
+
+                <div class="twelve wide column">
+                    <button id="btn1" onclick="readExecute()" disabled class="ui fluid blue basic massive button">
+                        <i class="icon download"></i>
+                        <span id="chapterName">다운로드</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- TEXT to PPT -->
+    <div class="ui raised padded container segment">
+
+        <div class="ui attached message">
+            <h2 class="ui green header">
+                <i class="list icon"></i>
+                <div class="content">
+                    Text to PPT
+                    <div class="sub header">Make Subtitle</div>
+                </div>
+            </h2>
+        </div>        
+
+        <div class="ui attached fluid equal width segment">
+            <div class="content">
+                <div class="ui message">
+                    <div class="header">
+                        자막의 레이아웃, 폰트, 정렬, 위치 등을 설정할 수 있습니다.
+                    </div>
+                    <p id="message"></p>
+                </div>
+
+                <div class="ui">
+                    <select id="LyricsLayout" onchange="getSetValues()" class="ui selection dropdown">
+                        <option value="LAYOUT_WIDE">레이아웃 16:9</option>
+                        <option value="LAYOUT_4x3">레이아웃 4:3</option>
+                    </select>
+<!-- // for Mac
+                    <select id="LyricsFontface" onchange="getSetValues()" class="ui selection dropdown">
+                      <option value="GyeonggiTitleB">경기천년제목</option>
+                      <option value="NanumBarunGothicBold">나눔바른고딕</option>
+                      <option value="NanumGothicExtraBold">나눔고딕</option>
+                      <option value="NanumMyeongjoExtraBold">나눔명조</option>
+                    </select>
+ -->
+
+                    <select id="LyricsFontface" onchange="getSetValues()" class="ui selection dropdown">
+                      <option value="경기천년제목 Bold">경기천년제목</option>
+                      <option value="나눔바른고딕">나눔바른고딕</option>
+                      <option value="나눔고딕 ExtraBold">나눔고딕</option>
+                      <option value="나눔명조 ExtraBold">나눔명조</option>
+                    </select>
+
+                    <select id="line" onchange="getSetValues()" class="ui selection dropdown">
+                        <option value='1'>1줄</option>
+                        <option value='2' selected>2줄</option>
+                        <option value='3'>3줄</option>
+                        <option value='4'>4줄</option>
+                        <option value='5'>5줄</option>
+                        <option value='6'>6줄</option>
+                    </select>
+
+                    <div class="ui divider"></div>
+
+                    <div class="ui icon bible buttons">
+                        <!-- 폰트스타일 div로 버튼을 하나씩 감싸서 따로 이벤트 선택되도록 -->
+                        <div><button id="bold" value="" class="ui button dynamic"><i class="bold icon"></i></button></div>
+                        <div><button id="italic" value="" class="ui button dynamic"><i class="italic icon"></i></button></div>
+                        <div><button id="underline" value="" class="ui button dynamic"><i class="underline icon"></i></button></div>
+                    </div>
+
+                    <div class="ui icon bible buttons">
+                        <!-- 본문정렬 div로 버튼을 여러개 감싸서 한개만 선택되도록 -->
+                        <button id="left" value="" class="ui button dynamic"><i class="align left icon"></i></button>
+                        <button id="center" value="" class="ui button dynamic active"><i class="align center icon"></i></button>
+                        <button id="right" value="" class="ui button dynamic"><i class="align right icon"></i></button>
+                        <button id="justify" value="" class="ui button dynamic"><i class="align justify icon"></i></button>
+                    </div>
+
+                    <div class="ui icon bible buttons">
+                        <!-- 본문위치 div로 버튼을 여러개 감싸서 한개만 선택되도록  -->
+                        <button id="top" value="" class="ui button dynamic"><i class="icon"><img id="icon_top"></i></button>
+                        <button id="middle" value="" class="ui button dynamic"><i class="icon"><img id="icon_middle"></i></button>
+                        <button id="bottom" value="" class="ui button dynamic active"><i class="icon"><img id="icon_bottom"></i></button>
+                    </div>
+
+                    <div class="ui labeled input">
+                        <div class="ui label">폰트크기</div>
+                        <input id="LyricsFontSize" type="number" value='36' min='20' max='50' step='1' onchange="getSetValues()" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                    </div>                    
+
+                    <div class="ui bible buttons">
+                        <button class="ui red basic button" onClick="setInitialize()">기본값(초기화)</button>
+                    </div>
+                </div>
+            </div>
+        </div>        
+ 
+        <div class="ui divider"></div>
+
+        <div class="ui stackable grid">
+
+            <div class="ten wide column">
+                <div class="ui form">
+                    <div class="field">
+                        <textarea id="content" placeholder="자막으로 만들 내용을 입력하세요."></textarea>
+                    </div>
+                </div>
+                <button class="ui bottom attached fluid green massive button" onclick="createSubTitle()">
+                    <i class="icon download"></i>
+                    <span id="LyricsBtnMsg"></span>자막 다운로드
+                </button>
+            </div> <!-- ten wide column -->
+
+            <div class="six wide column">
+                <h4 class="ui dividing green header">Preview</h4>
+                        <table class="ui inverted green unstackable table">
+                            <tr class="center aligned">
+                              <td class="bottom aligned outlineText">녹색배경 투명 자막<br />흰글씨(테두리) 자막</td>
+                            </tr>
+                        </table>
+
+            </div><!-- four wide column -->
+
+        </div> 
+    </div><!-- ui form -->
+</div>
+
+
+
+<!-- 
+    //////////////////////////////
+-->
+
+<script type="text/javascript">
+var icon_top = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAAApklEQVQ4y7XSTQ6CMBCG4TbKopGtey7gfYhB4HysTNR4CDkQ0QV+NW9NVwINTvKEdJhO+mfMirGVXHYTcmq/seFbyiiDPPFCGA/UlPFcy6CQVio5SSNHNOQqagrm2DWP4NPNLylj7KSHI5dRY3818bFn4oie3OSyw8+D1PJATW7WvuOCM8zSQwtXe0Ocm32gPq5YfGWh+ILkBnckN+iQ/Opc9Ij+E28tUh+JLDua8wAAAABJRU5ErkJggg==';
+
+var icon_middle = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAAAdUlEQVQ4y2NgwA/soZhkwAild0MxshhRgBlKr4diZDGibDYD4tVA/BiKV0PFSHJJPxD/h+J+UvzOhMRvh2IYYCI1LIgCTEhRBgrxzUC8BYi3AvE2KN4KFdsMVWOPrJdiA6gKqBqIZEcjVRIS2UmZapmJ6OwMALtlJWGTnZQcAAAAAElFTkSuQmCC';
+
+var icon_bottom = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAAAoElEQVQ4y7XSQQqCQBTG8RnSReS2vRfoPhKmna+VUNIhmgNJLeoL/g9mEeqIPfgx+Hx+KjPO/bm2SC7PekHcSwq4Y3HAFYsDbkgO2LD2iHuz3/6tDm7uV9jAQRp5oKE3GWI39xLkjUBvNMDzn3l0iALsMOXM+FWPq6WVcpZaTtLKES29mpkyfta2p+J/B3niBbsemKl+bW0mhewmFMyuUx+cJx+JRwKj+AAAAABJRU5ErkJggg==';
+
+$("#icon_top").attr("src", icon_top);
+$("#icon_middle").attr("src", icon_middle);
+$("#icon_bottom").attr("src", icon_bottom);
+
+
+function replaceAll(str, searchStr, replaceStr) { // 모든 문자열 대체 함수, https://mingggu.tistory.com/m/64
+   return str.split(searchStr).join(replaceStr);
+}
+
+
+// https://semantic-ui.com/modules/accordion.html#/settings
+$( document ).ready(function() {
+    $('.ui.accordion').accordion({exclusive: false, onChanging: getSetValues()}); // 세부설정 열고 닫기 
+});
+
+
+// https://jsbin.com/lakikegepe/edit?html,js,console,output
+// 1. 사용법 button class 에 button dynamic 지정
+// 2. 필수설정 id, value
+// 3. 동작 : 클릭시 id값이 value 값으로 지정되고 siblings에 의해 같은 depth의 값과 선택은 삭제
+// 4. 단독 사용시 <div></div>로 버튼을 따로 감싸줌
+$( document ).ready(function() {
+    $('.bible .button.dynamic').on('click', function() { // button dynamic 모두 적용됨
+        //alert(this.value);
+        if ($(this).hasClass('active')) $(this).removeClass('active').val('');
+        else $(this).addClass('active').val(this.id).siblings().removeClass('active').val('');
+        getSetValues();
+        //alert(this.value);
+    });
+    //console.log( "ready!" );
+});
+
+
+function getSetValues(){
+
+  console.log("===== Get Theme ======");
+// 테마선택 (defaultTheme, blackTheme, whiteTheme, greenTheme)
+  var defaultTheme = "defaultTheme"; //default
+
+  var themeVal = defaultTheme;
+  if(themeVal === "") themeVal = defaultTheme; //선택된게 없으면 default 값
+  if(themeVal === "defaultTheme") themeVal = '<div class="ui green label">기본</div>';
+  $("#themeMsg").html(themeVal);
+
+  console.log("테마: " + themeVal);
+
+  console.log("===== Get Values ======");
+// 본문정렬 (left, center, right, justify)
+  var defaultAlign = "center"; //default
+  var left = $("#left").val();
+  var center = $("#center").val();
+  var right = $("#right").val();
+  var justify = $("#justify").val();
+  var alignVal = left + center + right + justify;
+  if(alignVal === "") alignVal = defaultAlign; //선택된게 없으면 default 값
+  
+  console.log("정렬: " + alignVal);
+
+  
+// 본문위치 (top, middle, bottom)
+  var defaultVertical = "bottom"; //default
+  var top = $("#top").val();
+  var middle = $("#middle").val();
+  var bottom = $("#bottom").val();
+  var valignVal = top + middle + bottom;  
+  if(valignVal === "") valignVal = defaultVertical; //선택된게 없으면 default 값  
+  
+  console.log("위치: " + valignVal);
+  
+// 폰트스타일 (bold, italic, underline)
+  var defaultFontStyle = "normal";
+  var bold = $("#bold").val();
+  var italic = $("#italic").val();
+  var underline = $("#underline").val();
+  var fontStyleVal = bold + italic + underline;  
+  if(fontStyleVal === "") fontStyleVal = defaultFontStyle; //선택된게 없으면 default 값
+  else fontStyleVal = bold + " " + italic + " " + underline;
+
+  console.log(fontStyleVal);
+
+// Layout
+  var  LyricsLayout = $("#LyricsLayout").val();
+  console.log("레이아웃: " + LyricsLayout);  
+
+// Font Face
+  var  LyricsFontface = $("#LyricsFontface").val();
+
+// Font Size
+  var  LyricsFontSize = $("#LyricsFontSize").val();
+  
+  console.log("글씨체: " + LyricsFontface);
+
+// Font Size
+  var  line = $("#line").val();
+
+// 테마 미리보기 스타일 적용하기 (td)
+//  'NanumBarunGothic', sans-serif;
+//  'Nanum Gothic', sans-serif;
+//  'Nanum Myeongjo', serif;
+/*
+                      <option value="GyeonggiTitleB">경기천년제목</option>
+                      <option value="NanumBarunGothicBold">나눔바른고딕</option>
+                      <option value="NanumGothicExtraBold">나눔고딕</option>
+                      <option value="NanumMyeongjoExtraBold">나눔명조</option>
+*/
+
+    var fontFamily = "sans-serif";
+    var msgFontface
+    if(LyricsFontface === "경기천년제목 Bold") fontFamily = "'GyeonggiTitleM', sans-serif", msgFontface = "경기천년제목";
+    if(LyricsFontface === "나눔바른고딕") fontFamily = "'NanumBarunGothic', sans-serif", msgFontface = "나눔바른고딕";
+    if(LyricsFontface === "나눔고딕 ExtraBold") fontFamily = "'Nanum Gothic', sans-serif", msgFontface = "나눔고딕";
+    if(LyricsFontface === "나눔명조 ExtraBold") fontFamily = "'Nanum Myeongjo', serif", msgFontface = "나눔명조";   
+
+
+  var message = "<b>레이아웃:</b> " + LyricsLayout
+                 + " | " + "<b>폰트:</b> " + msgFontface + "("  + fontStyleVal + ")"
+           + " | " + "<b>폰트크기:</b> " + LyricsFontSize
+                 + " | " + "<b>본문정렬:</b> " + alignVal
+                 + " | " + "<b>본문위치:</b> " + valignVal
+                 ;
+
+  var btnMessage = msgFontface + "("  + LyricsFontSize + ")" + " | " + line + "줄 ";
+
+  $('.ui.table td').each(function (){
+    $(this).removeClass("top middle bottom aligned").addClass(valignVal + " aligned").css({
+        "font-family": fontFamily,
+        "font-style": italic,
+        "font-weight": bold,
+        "text-decoration": underline,
+    });
+  });
+
+
+// 수평 정렬 적용하기 (tr)
+  $('.ui.table tr').each(function (){
+    $(this).removeClass("left center right justify aligned").addClass(alignVal + " aligned");
+  });
+
+  $("#message").html(message);
+  $("#LyricsBtnMsg").html(btnMessage);
+
+}
+
+function setInitialize(){
+  console.log("초기화");
+  //$("#defaultTheme").addClass('active').val($("#defaultTheme").id).siblings().removeClass('active').val(''); // 테마 초기화
+  $("#center").addClass('active').val($("#center").id).siblings().removeClass('active').val(''); // 본문 정렬 초기화
+  $("#bottom").addClass('active').val($("#bottom").id).siblings().removeClass('active').val(''); // 본문 위치 초기화
+  $("#bold").removeClass('active').val(''); // bold 초기화
+  $("#italic").removeClass('active').val(''); // italic 초기화  
+  $("#underline").removeClass('active').val(''); // underline 초기화
+  $('#line').dropdown('restore defaults'); // 줄수 초기화
+  $('#LyricsLayout').dropdown('restore defaults'); // 레이아웃 초기화
+  $('#LyricsFontface').dropdown('restore defaults'); // 폰트 페이스 초기화
+  $('#LyricsLayout').dropdown('restore defaults');
+  $('#LyricsFontSize').val('36'); // 폰트 크기 초기화
+  getSetValues();  
+}
+
+</script>
+<!-- 
+    //////////////////////////////
+-->
+    
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            $('.ui.form').form();
+            $('select.dropdown').dropdown();
+            $('.ui.radio.checkbox').checkbox();
+            $('.ui.checkbox').checkbox();
+        });
+
+
+        function getTimestamp() { // 현재 타임스탬프 가져오기
+            var dateNow = new Date();
+            var dateMM = dateNow.getMonth() + 1;
+            dateDD = dateNow.getDate();
+            dateYY = dateNow.getFullYear(), h = dateNow.getHours();
+            m = dateNow.getMinutes();
+            return dateNow.getFullYear() + '' + (dateMM <= 9 ? '0' + dateMM : dateMM) + '' + (dateDD <= 9 ? '0' + dateDD : dateDD) + (h <= 9 ? '0' + h : h) + (m <= 9 ? '0' + m : m);
+        }
+
+        // 자막 만드는 함수
+        function createSubTitle() {
+            var content = $("#content").val();
+            content = content.replace(/\n$/gm, ''); // 중복된 줄바꿈 제거하기
+            content = content.replace(/\r$/gm, ''); // 중복된 엔터 제거하기
+            content = content.replace(/\t$/gm, ''); // 중복된 탭 제거하기
+            content = content.replace(/(^\s*)|(\s*$)/gm, ""); // 각 줄마다 앞 뒤 공백 제거
+
+
+
+            content = content.replace(/(?:\r\n|\r|\n)/g, '<br>');
+            if (content.trim().length < 1) {
+                alert("텍스트를 입력해 주세요!");
+                $("#content").val('');
+                $("#content").focus();
+                return false;
+            };
+            var addContent = content.split('<br>');
+            //console.log(addContent);
+
+            var cleanContent = $.map(addContent, $.trim); // 각 array 앞뒤 공백 제거
+
+            var n = $("#line").val(); // 줄씩 자르기
+
+            var len = cleanContent.length; // 컨텐츠 총 라인 수
+
+            var cnt = Math.floor(len / n); // 컨텐츠 라인을 n으로 나누기
+
+            if (cnt === 0) cnt = 1; // 나눈 값이 0일 경우 강제로 1 넣어주기
+
+            var resultContent = [];
+            for (var i = 0; i <= cnt; i++) {
+                resultContent.push(cleanContent.splice(0, n));
+            }
+
+            //console.log(resultContent);
+
+            // ===================== 자막 PPTX 관련 =============================
+            // PPT 파일 이름 셋팅
+            var lyricsTitle = resultContent[0][0].replace(/ /g, '').substring(0, 6);
+
+            // align 정렬 값 가져오기
+            // 본문정렬 (left, center, right, justify)
+              var defaultAlign = "center"; //default
+              var left = $("#left").val();
+              var center = $("#center").val();
+              var right = $("#right").val();
+              var justify = $("#justify").val();
+              var alignVal = left + center + right + justify;
+              if(alignVal === "") alignVal = defaultAlign; //선택된게 없으면 default 값
+
+              var lyricsAlign = alignVal;
+
+            // valign 정렬 값 가져오기
+            // 본문위치 (top, middle, bottom)
+              var defaultVertical = "bottom"; //default
+              var top = $("#top").val();
+              var middle = $("#middle").val();
+              var bottom = $("#bottom").val();
+              var valignVal = top + middle + bottom;  
+              if(valignVal === "") valignVal = defaultVertical; //선택된게 없으면 default 값
+
+              var lyricsValign = valignVal;
+
+            // 폰트스타일 (bold, italic, underline)
+              var bold = $("#bold").val();
+              var italic = $("#italic").val();
+              var underline = $("#underline").val();
+              if(bold == "bold") bold == true;
+              if(italic == "italic") italic == true;
+              if(underline == "underline") underline == true;
+
+            // 레이아웃 가져오기
+            // var LyricsLayout = $("#LyricsLayout").children("option:selected").val();
+            var  LyricsLayout = $("#LyricsLayout").val();
+
+            // 폰트 타입 및 사이즈 가져오기
+            //var LyricsFontface = $("#LyricsFontface").children("option:selected").val();
+            //var LyricsFontSize = $("#LyricsFontSize").val();
+
+            // Font Face
+              var  LyricsFontface = $("#LyricsFontface").val();
+
+            // Font Size
+              var  LyricsFontSize = $("#LyricsFontSize").val();
+
+            // 1. Create a new Presentation
+            let pres = new PptxGenJS();
+            pres.layout = LyricsLayout;
+
+
+                    let marginBT = 28.346 * 1.5; // 1cm(28.34) 1.5cm(42.519) 2cm(56.7) 3cm (85)
+                    let marginRL = 28.346 * 1.5; // 1cm(28.34) 1.5cm(42.519) 2cm(56.7) 3cm (85)
+
+            // 마스터 슬라이드 정의하기
+
+            pres.defineSlideMaster({
+                title: 'MASTER_SLIDE',
+                background: {
+                    fill: '00FF00'
+                }, // 크로마키 초록색 
+                objects: [{
+                    'placeholder': {
+                        text: 'Insert your text',
+                        options: {
+                            name: 'body',
+                            type: 'body',
+                            w: '100%',
+                            h: '100%',
+                            fontSize: LyricsFontSize,
+                            fontFace: LyricsFontface,
+                            color: "FFFFFF",
+                            bold: bold,
+                            italic: italic,
+                            underline: underline,
+                            isTextBox: true,
+                            //valign: lyricsValign,
+                            //fit: 'shrink',
+                            outline: {size: 0.5, color:'000000'},
+                            shadow: {type:"outer", angle: 45, blur: 1, color:'000000', offset: 2, opacity: 0.95},
+                            align: lyricsAlign,
+                            lineSpacing: LyricsFontSize * 1.025,
+                            charSpacing: 0
+                        }
+                    }
+                }                
+
+                ]
+
+            }); // 마스터 슬라이드
+
+            pres.addSection({
+                title: lyricsTitle
+            });
+
+
+            $.each(resultContent, function(index, item) {
+                if (resultContent[index].length != 0) {
+                    console.log(index + 1 + "페이지: " + item);
+                    var lyrics = item.join("\n");
+
+                    // ============== PPT 슬라이드 생성 ================= //
+                    // 1cm * 28.346 LRBT 왼 오 아 위 [56.7, 56.7, 28.34, 85] 기준 2cm, 2cm, 1cm, 3cm
+                    let marginBT = 28.346 * 1.5; // 1cm(28.34) 1.5cm(42.519) 2cm(56.7) 3cm (85)
+                    let marginRL = 28.346 * 1.5; // 1cm(28.34) 1.5cm(42.519) 2cm(56.7) 3cm (85)
+
+                    let slide = pres.addSlide({
+                        masterName: 'MASTER_SLIDE',
+                        sectionTitle: lyricsTitle
+                    });
+
+                    slide.addText(lyrics, {
+                        placeholder: 'body',
+                        valign: lyricsValign,                        
+                        //fontSize: LyricsFontSize,
+                        //fontFace: LyricsFontface,
+                        //color: "FFFFFF",
+                        //bold: true,
+                        //underline: false,
+                        //isTextBox: true,
+                        //valign: lyricsValign,
+                        fit: 'shrink',
+                        //outline:{size:1.50, color:'000000'},
+                        //glow:{size:7, opacity:0.8, color:'000000'},
+                        //outline:{size:0, color:'000000'}, // outline:{size:0.75, color:'000000'},
+                        margin: [marginBT, marginBT, marginRL, marginRL]
+                    });
+                    // ============== PPT 슬라이드 생성 ================= //
+
+                    console.log(index + 1 + "페이지: " + lyrics);
+
+                }
+            });
+
+            // PPT 파일 다운로드
+            pres.writeFile(lyricsTitle + "_" + getTimestamp());
+            // pres.writeFile({ fileName: lyricsTitle + "_" + getTimestamp() });
+
+
+        }
+    </script>
+
+
+    <script>        
+
+        var bibleArrays = {"창세기":50,"출애굽기":40,"레위기":27,"민수기":36,"신명기":34,"여호수아":24,"사사기":21,"룻기":4,"사무엘상":31,"사무엘하":24,"열왕기상":22,"열왕기하":25,"역대상":29,"역대하":36,"에스라":10,"느헤미야":13,"에스더":10,"욥기":42,"시편":150,"잠언":31,"전도서":12,"아가":8,"이사야":66,"예레미야":52,"예레미야애가":5,"에스겔":48,"다니엘":12,"호세아":14,"요엘":3,"아모스":9,"오바댜":1,"요나":4,"미가":7,"나훔":3,"하박국":3,"스바냐":3,"학개":2,"스가랴":14,"말라기":4,"마태복음":28,"마가복음":16,"누가복음":24,"요한복음":21,"사도행전":28,"로마서":16,"고린도전서":16,"고린도후서":13,"갈라디아서":6,"에베소서":6,"빌립보서":4,"골로새서":4,"데살로니가전서":5,"데살로니가후서":3,"디모데전서":6,"디모데후서":4,"디도서":3,"빌레몬서":1,"히브리서":13,"야고보서":5,"베드로전서":5,"베드로후서":3,"요한1서":5,"요한2서":1,"요한3서":1,"유다서":1,"요한계시록":22}     
+
+
+        var oldArrays = ["창세기","출애굽기","레위기","민수기","신명기","여호수아","사사기","룻기","사무엘상","사무엘하","열왕기상","열왕기하","역대상","역대하","에스라","느헤미야","에스더","욥기","시편","잠언","전도서","아가","이사야","예레미야","예레미야애가","에스겔","다니엘","호세아","요엘","아모스","오바댜","요나","미가","나훔","하박국","스바냐","학개","스가랴","말라기"]
+
+        var newArrays = ["마태복음","마가복음","누가복음","요한복음","사도행전","로마서","고린도전서","고린도후서","갈라디아서","에베소서","빌립보서","골로새서","데살로니가전서","데살로니가후서","디모데전서","디모데후서","디도서","빌레몬서","히브리서","야고보서","베드로전서","베드로후서","요한1서","요한2서","요한3서","유다서","요한계시록"]
+
+        var oldAndNewArrays = oldArrays.concat(newArrays)//두 배열 합치기       
+
+        $.each(bibleArrays, function(index, item) {
+            //console.log("bibleArrays: " + index);
+            var option = $("<option>"+index+"</option>");
+            $('#book').append(option);             
+        });
+
+        function oldAndNewChange(){ // 신구약 선택
+            //$('#chapter').prop('disabled', false);
+            var selectItem = $("#oldAndNew").val();
+            console.log(selectItem);
+            $('#book').empty();
+            $('#chapter').prop('disabled', false);
+            $('#btn1').prop('disabled', false);
+            $('#btn1').removeClass('basic');
+            var selectedArray = oldAndNewArrays;
+            if(selectItem == '전체') {selectedArray = oldAndNewArrays}
+            if(selectItem == '구약') {selectedArray = oldArrays}
+            if(selectItem == '신약') {selectedArray = newArrays}
+
+            $.each(selectedArray, function(index, item) {
+                var option = $("<option>"+item+"</option>");
+                $('#book').append(option);         
+            });
+            bookChange();
+        }        
+
+        function bookChange(){ // 책이름 선택
+
+            var selectBook = $("#book").val();
+            var num = bibleArrays[selectBook];
+
+            if(num == "undefined" || num == null || num == "") { // -- 책이름 -- 을 선택했을 때
+                $('#chapter').empty();
+                $('#chapter').append($("<option>--장--</option>"));
+                $('#chapter').prop('disabled', true);
+
+                $("#chapterName").html("다운로드"); 
+                $('#btn1').prop('disabled', true);
+                $('#btn1').addClass('basic');              
+                return false;
+            }
+
+            $('#chapter').prop('disabled', false);
+            $('#btn1').prop('disabled', false);
+            $('#btn1').removeClass('basic');
+            
+            var selectChapter = $("#chapter").val();
+            $("#chapterName").html(selectBook + " " +selectChapter + "장 다운로드");
+
+            var chapter = [];
+            for (var i = 0; i < num; i++) {
+                chapter.push(i+1);
+            }
+
+            $('#chapter').empty();
+
+            $.each(chapter, function(index, item) {
+                var option = $("<option>"+item+"</option>");
+                $('#chapter').append(option);             
+            });
+            //console.log(num);
+            if(chapter == '') { // 선택되지 않거나 정의되지 않았을 때
+                var option = $("<option>--장--</option>");
+                $('#chapter').append(option);  
+                $('#chapter').prop('disabled', 'disabled');
+            }
+            chapterChange();
+        }
+
+        function chapterChange(){ // 장 선택
+            var selectBook = $("#book").val();
+            var selectChapter = $("#chapter").val();
+            $("#chapterName").html(selectBook + " " +selectChapter + "장 다운로드");         
+        }        
+
+    </script>
+
+    <script>
+        // 새로 삽입 2021-01-14
+
+        var bibleNumberArray = [{"name": "창세기", "number": 1},{"name": "출애굽기", "number": 2},{"name": "레위기", "number": 3},{"name": "민수기", "number": 4},{"name": "신명기", "number": 5},{"name": "여호수아", "number": 6},{"name": "사사기", "number": 7},{"name": "룻기", "number": 8},{"name": "사무엘상", "number": 9},{"name": "사무엘하", "number": 10},{"name": "열왕기상", "number": 11},{"name": "열왕기하", "number": 12},{"name": "역대상", "number": 13},{"name": "역대하", "number": 14},{"name": "에스라", "number": 15},{"name": "느헤미야", "number": 16},{"name": "에스더", "number": 17},{"name": "욥기", "number": 18},{"name": "시편", "number": 19},{"name": "잠언", "number": 20},{"name": "전도서", "number": 21},{"name": "아가", "number": 22},{"name": "이사야", "number": 23},{"name": "예레미야", "number": 24},{"name": "예레미야애가", "number": 25},{"name": "에스겔", "number": 26},{"name": "다니엘", "number": 27},{"name": "호세아", "number": 28},{"name": "요엘", "number": 29},{"name": "아모스", "number": 30},{"name": "오바댜", "number": 31},{"name": "요나", "number": 32},{"name": "미가", "number": 33},{"name": "나훔", "number": 34},{"name": "하박국", "number": 35},{"name": "스바냐", "number": 36},{"name": "학개", "number": 37},{"name": "스가랴", "number": 38},{"name": "말라기", "number": 39},{"name": "마태복음", "number": 40},{"name": "마가복음", "number": 41},{"name": "누가복음", "number": 42},{"name": "요한복음", "number": 43},{"name": "사도행전", "number": 44},{"name": "로마서", "number": 45},{"name": "고린도전서", "number": 46},{"name": "고린도후서", "number": 47},{"name": "갈라디아서", "number": 48},{"name": "에베소서", "number": 49},{"name": "빌립보서", "number": 50},{"name": "골로새서", "number": 51},{"name": "데살로니가전서", "number": 52},{"name": "데살로니가후서", "number": 53},{"name": "디모데전서", "number": 54},{"name": "디모데후서", "number": 55},{"name": "디도서", "number": 56},{"name": "빌레몬서", "number": 57},{"name": "히브리서", "number": 58},{"name": "야고보서", "number": 59},{"name": "베드로전서", "number": 60},{"name": "베드로후서", "number": 61},{"name": "요한1서", "number": 62},{"name": "요한2서", "number": 63},{"name": "요한3서", "number": 64},{"name": "유다서", "number": 65},{"name": "요한계시록", "number": 66}];
+
+
+
+function readTextFile(fileName, selectVersion, selectBook, selectChapter) { //  txt 파일 읽기
+
+///////////////////////////////////////////////////////////////////////////////////////
+                //PPT에 들어갈 변수
+                // 이미지
+                var bibleBkg = { path:'img/bible_bg.jpg' }; // 마스터 배경 이미지
+                var objImg = { path:'img/NSHC_logo.png', x:4.6, y:3.5, w:4, h:1.8 }; // 로고
+
+                /*
+                여기에 바이블 역본 selectVersion 언어에 따른 bibleName 새로 셋팅하기
+                */
+
+
+                var bibleName = selectVersion; //바이블 역본 이름
+                console.log ("bibleName :" + bibleName);              
+                
+                // 폰트 및 색상
+                var FONT_FACE = '나눔바른고딕'; //폰트지정
+                var COLOR_TITLE = 'FFFFFF';
+                var COLOR_BODY = 'FFFFFF';
+                var BibleFontSize = 36;
+
+
+
+                // PPTX 선언
+
+                var pptx = new PptxGenJS();
+                var pLayout = 'LAYOUT_WIDE'; // LAYOUT_WIDE (fontSize:34, lineSpacing:50), LAYOUT_4x3 (fontSize:32, lineSpacing:40)
+                pptx.layout = pLayout; // default 값
+
+                // 마스터 슬라이드 정의하기
+                pptx.defineSlideMaster({
+                    title: 'MASTER_BIBLE',
+                    background: bibleBkg, // 또는 크로마키 초록색 { fill: '00FF00' },
+                    //margin:  [ 0.5, 0.25, 1.0, 0.25 ], // 1cm * 28.346 LRBT 왼 오 아 위
+                    //slideNumber: { x:0.6, y:7.0, color:'FFFFFF', align:'left', valign:'middle', fontFace:FONT_FACE, fontSize:12 },
+                    objects: [
+                        //{ 'rect':  { x: 0.00, y:6.90, w:'100%', h:0.6, fill:{color:'003b75'} } },
+                        //{ 'image': { x:11.45, y:5.95, w:1.67, h:0.75, data:starlabsLogoSml } },
+                        { 'placeholder':
+                            {
+                                text: 'Insert your title',
+                                options: { 
+                                    name:'title', type:'title', 
+                                    x:0.0, y:0.2, w:'100%', h:1.0, 
+                                    align:'right',
+                                    isTextBox:true, 
+                                    fit: 'shrink',
+                                    fontSize:20, 
+                                    color:COLOR_TITLE, 
+                                    fontFace:FONT_FACE
+                                }
+                                
+                            }
+                        },
+                        { 'placeholder':
+                            {
+                                text: 'Insert your body text',
+                                options: { 
+                                    name:'body', type:'body', 
+                                    w:'100%', h:'100%', 
+                                    color:COLOR_BODY, 
+                                    fontFace:FONT_FACE,
+                                    fontSize: BibleFontSize,
+                                    lineSpacing: BibleFontSize * 1.35, // 50
+                                    charSpacing: 0,
+                                    bold: false,
+                                    underline: false,
+                                    isTextBox: true,
+                                    align:'justify',
+                                    fit: 'shrink',
+                                    glow:{size:0, opacity:0.8, color:'000000'}, // glow:{size:7, opacity:0.8, color:'000000'},
+                                    //outline:{size:0, color:'000000'}, // outline:{size:0.75, color:'000000'},
+
+                                }                   
+                            }
+                        }
+
+                    ]
+                }); // 마스터 슬라이드                       
+///////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+            $.get(fileName, function(data) {
+                data = data.replace(/\n$/gm, ''); // 중복된 줄바꿈 제거하기
+                data = data.replace(/\r$/gm, ''); // 중복된 엔터 제거하기
+                data = data.replace(/\t$/gm, ''); // 중복된 탭 제거하기
+                data = data.replace(/(^\s*)|(\s*$)/gm, ""); // 각 줄마다 앞 뒤 공백 제거
+
+                data = data.trim(); //앞 뒤 공백 제거
+
+                console.log(data);
+
+                var lines = data.split("\n");
+
+                lines = $.map(lines, $.trim); // 각 array 앞뒤 공백 제거
+
+                console.log(lines);
+
+                var lineLength = lines.length; // 총길이
+
+
+                let book = selectBook; //책이름
+                let num = selectChapter; //장
+                let chapter = book + ' ' + num + '장';
+
+                pptx.addSection({
+                    title: chapter
+                });
+                let vLength = lineLength;                
+
+
+                //$('#myContainer').append('<div>' + decodeURI(fileName)); //검수
+                //$('#myContainer').append('<div>총 ' + lineLength + ' 절<br />'); //검수    
+                    
+                $.each(lines, function(n, elem) {
+
+                    elem = elem.trim(); // 앞 뒤 공백 제거
+
+                    var God = $("#God").is(":checked");
+                    var Jehovah = $("#Jehovah").is(":checked");
+                    var Baptism = $("#Baptism").is(":checked");
+
+                    if (God == true) elem = elem.replace(/하느님/gi, '하나님');
+                    if (Jehovah == true) elem = elem.replace(/야훼/gi, '여호와');
+                    if (Baptism == true) elem = elem.replace(/세례/gi, '침례');
+
+                    //elem = elem.replace('세례', '침례'); // 세례 => 침례
+                    //elem = elem.replace('하느님', '하나님'); // 하느님 => 하나님
+                    //elem = elem.replace('야훼', '여호와'); // 야훼 => 여호와
+
+                    elem = elem.split('\t');
+
+                    elem.length; // 탭으로 나눈 수 (기본적으로 3)
+
+                    var rtrText = elem[1] + "  " + elem[2];
+                    if (elem.length > 3) { // 탭수가 3이상일 경우(영문버전 등) 앞 숫자 제외하고 나머지 문자열 합치기
+                        rtrText = elem[1] + "  ";
+                        for(i=0; i < elem.length - 2; i++){
+                            rtrText +=  elem[i + 2];
+                        }
+                    }
+
+                        createSlides(pptx, chapter, rtrText, vLength, n+1);
+
+                    //$('#myContainer').append('<div>'+ '탭수: ' + elem.length + ' | ' + rtrText + '</div>'); //검수
+                }); //Each
+
+
+                pptx.writeFile(selectVersion + '_' +selectBook + '_' + selectChapter + '장');
+                //pptx.writeFile({ fileName: selectVersion + '_' +selectBook + '_' + selectChapter + '장' });
+                //return false;
+
+            }); // getFile
+
+        function createSlides(pptx, chapter, result, vLength, index) {
+            let slide = pptx.addSlide({masterName:'MASTER_BIBLE', sectionTitle:chapter});
+            slide.addText(chapter, { placeholder:'title', valign: 'middle', margin: [56.7, 56.7, 0, 0] });
+
+            slide.addText(result, { 
+                placeholder:'body',
+                fit: 'shrink',
+                valign: 'top',
+                margin: [56.7, 56.7, 28.34, 85] // margin: 30 
+            }); // 1cm * 28.346 LRBT 왼 오 아 위 [56.7, 56.7, 28.34, 85] 기준 2cm, 2cm, 1cm, 3cm
+
+            slide.addText(bibleName, {x:'25%', y:6.9, w:'50%', h:0.6, align:'center', valign:'middle', margin: [56.7, 56.7, 0, 0], color:COLOR_TITLE, fontSize:14, fontFace:FONT_FACE });
+            slide.addText(index + ' / ' + vLength, {x:'50%', y:6.9, w:'50%', h:0.6, align:'right', valign:'middle', margin: [56.7, 56.7, 0, 0], color:COLOR_TITLE, fontSize:14, fontFace:FONT_FACE });
+        };
+
+
+} // readTextFile
+
+        // var dataUrl = encodeURI("bibleDB/공동번역/4_민수기_31장.txt");
+
+    function readExecute() {
+
+        if(confirm($("#loadVersion").children("option:selected").text() + " | " + $('#book').val() + " " + $('#chapter').val() + "장을 다운로드 하시겠습니까?") == false) {
+            return false;
+        }
+
+        var selectVersion = $("#loadVersion").val(); // 역본이름
+        console.log(selectVersion);
+        var selectBook = $("#book").val(); // 책이름
+        var selectChapter = $("#chapter").val(); // 장
+
+        const found = bibleNumberArray.find(element => element.name == selectBook);
+        var selectBookNum = found.number;
+        console.log(found.name + found.number);
+
+        // "bibleDB" + "/" + "공동번역" + "/" + "4" + "_" + selectBook + "_" + selectChapter + "장.txt";
+
+        var dataUrl = encodeURI("bibleDB" + "/" + selectVersion + "/" + selectBookNum + "_" + selectBook + "_" + selectChapter + "장.txt");
+        console.log(dataUrl);
+        readTextFile(dataUrl, selectVersion, selectBook, selectChapter); // 텍스트 파일 읽기         
+    }
+
+    </script>
+
+    <script>
+        /*
+        fit: 'none' // 자동 맞춤 안함
+        fit: 'shrink' // 넘치면 텍스트 크기 조정(축소)
+        fit: 'resize' // 도형을 텍스트 크기에 맞춤
+
+        // 2: Text Effects: Outline
+        // 그림자 / 실선, 2pt
+        slide.addText("Text Outline:", { x:0.5, y:0.6, w:'90%', h:0.3, margin:0, color:'0088CC' });
+        slide.addText("size:2, color:ACCENT3", { x:0.5, y:1.0, w:'90%', h:1.1, fontSize:72, color:'0088CC', outline:{size:2, color:pptx.colors.ACCENT3} });
+
+        // 3: Text Effects: Glow
+        // 네온 / 크기 10pt, 투명도 75%
+        slide.addText("Text Glow:", { x:0.5, y:2.6, w:'90%', h:0.3, margin:0, color:'0088CC' });
+        slide.addText("size:10, color:ACCENT2", { x:0.5, y:3.0, w:'90%', h:1.1, fontSize:72, color:'0088CC', glow:{size:10, opacity:.25, color:pptx.colors.ACCENT2} });
+
+        // 4: Text Effects: Shadow
+        // 그림자 / 색, 투명도 40%, 크기 100%, 흐리게 3pt, 각도 45도, 간격 10pt
+        var shadowOpts = { type:'outer', color:'696969', blur:3, offset:10, angle:45, opacity:0.6 };
+        slide.addText("Text Shadow:", { x:0.5, y:4.6, w:'90%', h:0.3, margin:0, color:'0088CC' });
+        slide.addText("type:outer, offset:10, blur:3", { x:0.5, y:4.9, w:'90%', h:0.5, fontSize:32, color:'0088cc', shadow:shadowOpts });
+
+
+// https://gitbrent.github.io/PptxGenJS/docs/api-text.html#text-examples
+var pptx = new PptxGenJS();
+var slide = pptx.addSlide();
+
+// EX: Dynamic location using percentages
+slide.addText("^ (50%/50%)", { x: "50%", y: "50%" });
+
+// EX: Basic formatting
+slide.addText("Hello", { x: 0.5, y: 0.7, w: 3, color: "0000FF", fontSize: 64 });
+slide.addText("World!", { x: 2.7, y: 1.0, w: 5, color: "DDDD00", fontSize: 90 });
+
+// EX: More formatting options
+slide.addText("Arial, 32pt, green, bold, underline, 0 inset", {
+    x: 0.5,
+    y: 5.0,
+    w: "90%",
+    margin: 0.5,
+    fontFace: "Arial",
+    fontSize: 32,
+    color: "00CC00",
+    bold: true,
+    underline: true,
+    isTextBox: true,
+});
+
+// EX: Format some text
+slide.addText("Hello World!", { x: 2, y: 4, fontFace: "Arial", fontSize: 42, color: "00CC00", bold: true, italic: true, underline: true });
+
+// EX: Multiline Text / Line Breaks - use "\n" to create line breaks inside text strings
+slide.addText("Line 1\nLine 2\nLine 3", { x: 2, y: 3, color: "DDDD00", fontSize: 90 });
+
+// EX: Format individual words or lines by passing an array of text objects with `text` and `options`
+slide.addText(
+    [
+        { text: "word-level", options: { fontSize: 36, color: "99ABCC", align: "right", breakLine: true } },
+        { text: "formatting", options: { fontSize: 48, color: "FFFF00", align: "center" } },
+    ],
+    { x: 0.5, y: 4.1, w: 8.5, h: 2.0, fill: { color: "F1F1F1" } }
+);
+
+// EX: Bullets
+slide.addText("Regular, black circle bullet", { x: 8.0, y: 1.4, w: "30%", h: 0.5, bullet: true });
+// Use line-break character to bullet multiple lines
+slide.addText("Line 1\nLine 2\nLine 3", { x: 8.0, y: 2.4, w: "30%", h: 1, fill: { color: "F2F2F2" }, bullet: { type: "number" } });
+// Bullets can also be applied on a per-line level
+slide.addText(
+    [
+        { text: "I have a star bullet", options: { bullet: { code: "2605" }, color: "CC0000" } },
+        { text: "I have a triangle bullet", options: { bullet: { code: "25BA" }, color: "00CD00" } },
+        { text: "no bullets on this line", options: { fontSize: 12 } },
+        { text: "I have a normal bullet", options: { bullet: true, color: "0000AB" } },
+    ],
+    { x: 8.0, y: 5.0, w: "30%", h: 1.4, color: "ABABAB", margin: 1 }
+);
+
+// EX: Paragraph Spacing
+slide.addText("Paragraph spacing - before:12pt / after:24pt", {
+    x: 1.5,
+    y: 1.5,
+    w: 6,
+    h: 2,
+    fill: { color: "F1F1F1" },
+    paraSpaceBefore: 12,
+    paraSpaceAfter: 24,
+});
+
+// EX: Hyperlink: Web
+slide.addText(
+    [
+        {
+            text: "PptxGenJS Project",
+            options: { hyperlink: { url: "https://github.com/gitbrent/pptxgenjs", tooltip: "Visit Homepage" } },
+        },
+    ],
+    { x: 1.0, y: 1.0, w: 5, h: 1 }
+);
+// EX: Hyperlink: Slide in Presentation
+slide.addText(
+    [
+        {
+            text: "Slide #2",
+            options: { hyperlink: { slide: "2", tooltip: "Go to Summary Slide" } },
+        },
+    ],
+    { x: 1.0, y: 2.5, w: 5, h: 1 }
+);
+
+// EX: Drop/Outer Shadow
+slide.addText("Outer Shadow", {
+    x: 0.5,
+    y: 6.0,
+    fontSize: 36,
+    color: "0088CC",
+    shadow: { type: "outer", color: "696969", blur: 3, offset: 10, angle: 45 },
+});
+
+// EX: Text Outline
+slide.addText("Text Outline", {
+    x: 0.5,
+    y: 6.0,
+    fontSize: 36,
+    color: "0088CC",
+    outline: { size: 1.5, color: "696969" },
+});
+
+// EX: Formatting can be applied at the word/line level
+// Provide an array of text objects with the formatting options for that `text` string value
+// Line-breaks work as well
+slide.addText(
+    [
+        { text: "word-level\nformatting", options: { fontSize: 36, fontFace: "Courier New", color: "99ABCC", align: "right", breakLine: true } },
+        { text: "...in the same textbox", options: { fontSize: 48, fontFace: "Arial", color: "FFFF00", align: "center" } },
+    ],
+    { x: 0.5, y: 4.1, w: 8.5, h: 2.0, margin: 0.1, fill: { color: "232323" } }
+);
+
+pptx.writeFile("Demo-Text")
+
+        */  
+
+    
+    </script>
+</body>
+
+</html>
