@@ -15,6 +15,45 @@ $( document ).ready(function() {
 
 });
 
+// http://www.htmldrive.net/items/show/713/simple-Dynamic-tabs-using-jQuery.html
+function copyText() {
+
+	var now = new Date();	// 현재 날짜 및 시간
+	
+	var copyText = document.getElementById("content");
+	copyText.select();
+	copyText.setSelectionRange(0, 99999)
+	document.execCommand("copy");
+	//alert("Copied the text: " + copyText.value);
+	
+	var trimed = copyText.value.replace(/\s/gi, "");
+	var historyName = trimed.substr(0,5);
+	//alert("공백제거한 5글자: " + trimed.substr(0,5) );
+	//if($('#restore').length){ alert('aaa') }; // 존재하는지 검사
+	
+	var historyBtn = "<div name='" + now + "' class='mini ui basic button' onclick='restore(this)'>" + historyName + "<a href='#' class='remove' onclick='remove(this)'>ⓧ</a></div>";
+	var histroyTextArea = "<textarea id='" + now + "' style='display:none;'>" + copyText.value + "</textarea>";
+	$("#history").append(historyBtn + histroyTextArea);
+
+}
+
+function restore(val) {
+	var id = $(val).attr("name");
+	//alert(id);
+	var restoreText = document.getElementById(id);
+	restoreText.select();
+	restoreText.setSelectionRange(0, 99999)
+	document.execCommand("copy");
+//	alert("restoreText: " + restoreText.value);
+	  
+	$("#content").val(restoreText.value);
+	  
+}
+
+function remove(val) {
+	$(val).parent().remove();
+}
+
 function replaceAll(str, searchStr, replaceStr) { // 모든 문자열 대체 함수, https://mingggu.tistory.com/m/64
    return str.split(searchStr).join(replaceStr);
 }
@@ -356,6 +395,7 @@ function createSubTitle() {
 
     // PPT 파일 다운로드
     pres.writeFile(lyricsTitle + "_" + getTimestamp());
+    copyText();
 
 
 }
