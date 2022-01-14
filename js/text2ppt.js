@@ -156,11 +156,33 @@ function getSetValues(){
 */
 
     var fontFamily = "sans-serif";
-    var msgFontface
+
+    var msgFontface;
+    if(LyricsFontface === "G마켓 산스 Medium") fontFamily = "'GmarketSansLight', sans-serif", msgFontface = "G마켓 산스";    
     if(LyricsFontface === "경기천년제목 Bold") fontFamily = "'GyeonggiTitleM', sans-serif", msgFontface = "경기천년제목";
     if(LyricsFontface === "나눔바른고딕") fontFamily = "'NanumBarunGothic', sans-serif", msgFontface = "나눔바른고딕";
     if(LyricsFontface === "나눔고딕 ExtraBold") fontFamily = "'Nanum Gothic', sans-serif", msgFontface = "나눔고딕";
     if(LyricsFontface === "나눔명조 ExtraBold") fontFamily = "'Nanum Myeongjo', serif", msgFontface = "나눔명조";
+    
+    
+    document.getElementById("LyricsDownBtn").style.fontFamily = fontFamily;
+	    
+
+	    var bgColor = $("#color-select").val();
+	    var bgColorInput = $("#color-picker").val();
+	    $("#color-picker").attr("disabled", true);
+	    
+	    //if(bgColor != "123") {$("#color-picker").val('#00FF00'); $("#color-picker").trigger('keyup'); $("#LyricsDownBtn").css('color', '#FFFFFF');}
+	    if(bgColor === "Green") {$("#color-picker").val('#00FF00'); $("#color-picker").trigger('keyup'); $("#LyricsDownBtn").css('color', '#FFFFFF');}
+	    if(bgColor === "Orange") {$("#color-picker").val('#FFA500'); $("#color-picker").trigger('keyup'); $("#LyricsDownBtn").css('color', '#FFFFFF');}
+	    if(bgColor === "Black") {$("#color-picker").val('#000000'); $("#color-picker").trigger('keyup'); $("#LyricsDownBtn").css('color', '#FFFFFF');}
+	    if(bgColor === "White") {$("#color-picker").val('#FFFFFF'); $("#color-picker").trigger('keyup'); $("#LyricsDownBtn").css('color', '#000000');}
+	    if(bgColor === "Pink") {$("#color-picker").val('#FFC0CB'); $("#color-picker").trigger('keyup'); $("#LyricsDownBtn").css('color', '#FFFFFF');}
+	    if(bgColor === "Blue") {$("#color-picker").val('#0000FF'); $("#color-picker").trigger('keyup'); $("#LyricsDownBtn").css('color', '#FFFFFF');}
+	    if(bgColor === "Yellow") {$("#color-picker").val('#FFFF00'); $("#color-picker").trigger('keyup'); $("#LyricsDownBtn").css('color', '#000000');}
+	    if(bgColor === "Gray") {$("#color-picker").val('#808080'); $("#color-picker").trigger('keyup'); $("#LyricsDownBtn").css('color', '#FFFFFF');}
+	    if(bgColor === "Self") {$("#color-picker").attr("disabled", false); $("#color-picker").focus();}
+	    // Black	Pink	White	Blue	Yellow	Gray
 
 
   var message = "<b>레이아웃:</b> " + LyricsLayout
@@ -171,6 +193,7 @@ function getSetValues(){
                  ;
 
   var btnMessage = msgFontface + "("  + LyricsFontSize + ")" + " | " + line + "줄 ";
+  
 
   $('.ui.table td').each(function (){
     $(this).removeClass("top middle bottom aligned").addClass(valignVal + " aligned").css({
@@ -204,7 +227,15 @@ function setInitialize(){
   $('#LyricsLayout').dropdown('restore defaults'); // 레이아웃 초기화
   $('#LyricsFontface').dropdown('restore defaults'); // 폰트 페이스 초기화
   $('#LyricsLayout').dropdown('restore defaults');
-  $('#LyricsFontSize').val('36'); // 폰트 크기 초기화
+  $('#LyricsFontSize').val('32'); // 폰트 크기 초기화
+
+  $('#color-select').dropdown('restore defaults'); // 배경 색상 선택 초기화
+  $("#color-picker").val('#00FF00'); // 배경 색상 초기화  
+  $("#color-picker").trigger('keyup');  // blur, focus, load, resize, scroll, unload, beforeunload, click, dblclick, mousedown, mouseup, mousemove, mouseover, mouseout, mouseenter, mouseleave, change, select, submit, keydown, keypress, and keyup
+  $("#preview").css('backgroundColor', '#00FF00');
+  $("#LyricsDownBtn").css('backgroundColor', '#00FF00');
+  $("#LyricsDownBtn").css('color', '#FFFFFF');
+  
   getSetValues();  
 }
 
@@ -313,48 +344,63 @@ function createSubTitle() {
 
     // Font Size
       var  LyricsFontSize = $("#LyricsFontSize").val();
+      
+      
+    // Background Color
+      var backgroundColor = $("#color-picker").val(); 
 
     // 1. Create a new Presentation
     let pres = new PptxGenJS();
     pres.layout = LyricsLayout;
 
+    pres.addSection({
+        title: lyricsTitle
+    });
 
-            let marginBT = 28.346 * 1.5; // 1cm(28.34) 1.5cm(42.519) 2cm(56.7) 3cm (85)
-            let marginRL = 28.346 * 1.5; // 1cm(28.34) 1.5cm(42.519) 2cm(56.7) 3cm (85)
+            var marginBT = 28.346 * 1.5; // 1cm(28.34) 1.5cm(42.519) 2cm(56.7) 3cm (85)
+            var marginRL = 28.346 * 1.5; // 1cm(28.34) 1.5cm(42.519) 2cm(56.7) 3cm (85)
 
     // 마스터 슬라이드 정의하기
-
     pres.defineSlideMaster({
         title: 'PLACEHOLDER_SLIDE',
-        //background: { color: '00FF00' },
-        background: {
-            fill: '00FF00'
-        }, // 크로마키 초록색 
-        objects: [{
-            placeholder: {
-                text: '',
-                options: {
-                    name: 'body',
-                    type: 'body',
-                    w: '100%',
-                    h: '100%',
-                    color: "FFFFFF",
-                    bold: bold,
-                    italic: italic,
-                    underline: underline,
-                    isTextBox: true,
-                    //valign: lyricsValign,
-                    //align: lyricsAlign,                    
-                    //fit: 'shrink',
-	                fontSize: LyricsFontSize,
-	                fontFace: LyricsFontface, 
-                    outline: {size: 0.5, color:'000000'},
-                    lineSpacing: LyricsFontSize * 1.025,
-                    charSpacing: 0
-                }
-            }
-        }                
+        /*background: { color: '00FF00' },
+        //009933, 00B140
+        파워포인트로 만들 경우Green Screen as RGB Color Value: 0, 177, 64
+        인쇄용, 가림막으로 만들 경우Green Screen as CMYK Color Value: 81, 0, 92, 0
+        프로그램으로 처리할 경우Green Screen as Hex Color Value: #00b140
+        html로 할 경우Green Screen as Websafe Color Value: #009933
+        */
 
+        //background: { color: "00B140", transparency: 0 }, // 크로마키 초록색
+        background: { color: backgroundColor, transparency: 0 }, // 크로마키 초록색
+        
+        objects: [
+	    	{
+	            placeholder: {
+	                text: '',
+	                options: {
+	                    name: 'body',
+	                    type: 'body',
+	                    w: '100%',
+	                    h: '100%',
+	                    color: 'FFFFFF',
+	                    bold: bold,
+	                    italic: italic,
+	                    underline: underline,
+	                    isTextBox: true,                   
+	                    fit: 'shrink',
+		                fontSize: LyricsFontSize,
+		                fontFace: LyricsFontface,
+						valign: lyricsValign,
+						align: lyricsAlign,
+	                    //outline: {size: 0.5, color:'000000'},
+	                    //glow:{size:2, opacity:1.0, color:'000000'},
+	                    lineSpacing: LyricsFontSize * 1.025,
+	                    charSpacing: -1,
+	                    margin: [marginBT, marginBT, marginRL, marginRL]
+	                },
+	            },
+	        },
         ]
 
     }); // 마스터 슬라이드
@@ -367,25 +413,20 @@ function createSubTitle() {
 
             // ============== PPT 슬라이드 생성 ================= //
             // 1cm * 28.346 LRBT 왼 오 아 위 [56.7, 56.7, 28.34, 85] 기준 2cm, 2cm, 1cm, 3cm
-            let marginBT = 28.346 * 1.5; // 1cm(28.34) 1.5cm(42.519) 2cm(56.7) 3cm (85)
-            let marginRL = 28.346 * 1.5; // 1cm(28.34) 1.5cm(42.519) 2cm(56.7) 3cm (85)
+            var marginBT = 28.346 * 1.5; // 1cm(28.34) 1.5cm(42.519) 2cm(56.7) 3cm (85)
+            var marginRL = 28.346 * 1.5; // 1cm(28.34) 1.5cm(42.519) 2cm(56.7) 3cm (85)
 
-            let slide = pres.addSlide({
+            var slide = pres.addSlide({
                 masterName: 'PLACEHOLDER_SLIDE',
                 sectionTitle: lyricsTitle
             });
 
+            
             slide.addText(lyrics, {
-                placeholder: 'body',        
-                valign: lyricsValign,
-                align: lyricsAlign,
-                fit: 'shrink',
-                shadow: {type:"outer", angle: 45, blur: 1, color:"000000", offset: 2, opacity: 0.95},                
-                //outline:{size:1.50, color:'000000'},
-                //glow:{size:7, opacity:0.8, color:'000000'},
-                //outline:{size:0, color:'000000'}, // outline:{size:0.75, color:'000000'},
-                margin: [marginBT, marginBT, marginRL, marginRL]
+                placeholder: 'body',
+                shadow: {type:"outer", angle: 45, blur: 0.1, color:"000000", offset: 1, opacity: 1.0} // 각도 45, 흐리게 0.1, 색 000, 간격 1, 투명도 0
             });
+                      
             // ============== PPT 슬라이드 생성 ================= //
 
             console.log(index + 1 + "페이지: " + lyrics);
@@ -394,8 +435,9 @@ function createSubTitle() {
     });
 
     // PPT 파일 다운로드
-    pres.writeFile(lyricsTitle + "_" + getTimestamp());
+    pres.writeFile({ fileName: lyricsTitle + "_" + getTimestamp() });
     copyText();
+
 
 
 }
