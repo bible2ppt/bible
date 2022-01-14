@@ -2,30 +2,109 @@
 <html>
 
 <head>
-    <title>PPT MAKER 2.1 (20210731)</title>
+    <title>PPT MAKER 2.2 (20220109)</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico">
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/pptxgenjs@3.7.1/dist/pptxgen.bundle.js"></script>
-    <!--script src="https://cdn.jsdelivr.net/npm/pptxgenjs@3.6.0/dist/pptxgen.bundle.js"></script-->
-    <!--script src="https://cdn.jsdelivr.net/npm/pptxgenjs@3.4.0/dist/pptxgen.bundle.js"></script-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/alasql/0.6.2/alasql.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pptxgenjs@3.9.0/dist/pptxgen.bundle.js"></script>
+    <script src="//cdn.jsdelivr.net/alasql/latest/alasql.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-    
-
-
-    
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@claviska/jquery-minicolors@2.3.6/jquery.minicolors.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@claviska/jquery-minicolors@2.3.6/jquery.minicolors.css">
+
+    <script>
+        // 
+        $(document).ready(function() {
+
+            $('.minicolors').each(function() {
+                $(this).minicolors({
+
+                    control: $(this).attr('data-control') || 'hue',
+                    defaultValue: $(this).attr('data-defaultValue') || '',
+                    format: $(this).attr('data-format') || 'hex',
+                    keywords: $(this).attr('data-keywords') || '',
+                    inline: $(this).attr('data-inline') === 'true',
+                    letterCase: $(this).attr('data-letterCase') || 'lowercase',
+                    opacity: $(this).attr('data-opacity'),
+                    position: $(this).attr('data-position') || 'bottom',
+                    swatches: $(this).attr('data-swatches') ? $(this).attr('data-swatches').split('|') : [],
+                    change: function(value, opacity) {
+                        if (!value) return;
+                        if (opacity) value += ', ' + opacity;
+                        if (typeof console === 'object') {
+                            console.log(value);
+                        }
+                    },
+                    theme: 'bootstrap'
+                });
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        /*
+        G마켓 산스 http://script.ebay.co.kr/fonts/GmarketSansOTF.zip
+        나눔(바른고딕,고딕,명조체 https://hangeul.naver.com/2021/fonts/nanum
+        경기천년체 https://www.gg.go.kr/contents/contents.do?ciIdx=679&menuId=2457    
+        */
+        /*Font Face*/
+        @font-face {
+            font-family: 'GmarketSansLight';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'GyeonggiTitleM';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'NanumBarunGothic';
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothic/NanumBarunGothicWeb.eot);
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothic/NanumBarunGothicWeb.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothic/NanumBarunGothicWeb.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothic/NanumBarunGothicWeb.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: 'NanumGothic';
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumGothic/NanumGothic.eot);
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumGothic/NanumGothic.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumGothic/NanumGothic.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumGothic/NanumGothic.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: 'NanumMyeongjo';
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumMyeongjo/NanumMyeongjo.eot);
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumMyeongjo/NanumMyeongjo.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumMyeongjo/NanumMyeongjo.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumMyeongjo/NanumMyeongjo.ttf) format("truetype");
+        }
+    </style>
+
+    <style type="text/css" id="fontstyle">
+        /* font rule 
+		body, div, table, input, tr, p, h1, h2, h3, h4, span, textarea, select, button, button, th, td, input, select, textarea, th, td, p, dl, dt, dd, li, pre {
+		    font-family: GmarketSansLight !important;
+		}
+		#preview {font-family: GmarketSansLight !important;}		
+		*/
+    </style>
 
     <style type="text/css">
         .outlineText {
-            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            /*Shadow Ref. https://www.codingfactory.net/10650 */
+            /*그림자로 아웃라인 효과 내기 text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+            text-shadow: 1px 1px 0px #000;
+            background: #00FF00;
         }
 
-        .ui .table { 
+        .ui .table {
             height: 190px;
         }
 
@@ -36,16 +115,35 @@
         .ui.selection.dropdown {
             padding: 10px;
         }
-        a.remove { color:#f00; margin-left:10px;}        
+
+        a.remove {
+            color: #f00;
+            margin-left: 10px;
+        }
+
+        .minicolors {
+            padding: 0 0.5em;
+            border: 0;
+            height: 38px;
+            width: 100%;
+            border-radius: 20px;
+            text-align: "left";
+        }
+
+        .minicolors input:focus {
+            border: 0;
+            outline: none;
+        }
     </style>
 
 </head>
 
 <body>
+
+
     <div class="ui container"></div>
 
     <!-- BIBLE to PPT -->
-
     <div class="ui raised padded container segment">
 
         <div class="ui attached message">
@@ -53,7 +151,7 @@
                 <i class="book icon"></i>
                 <div class="content">
                     Bible to PPT
-                    <div class="sub header">Version 2.2</div>
+                    <div class="sub header">Version 2.2 (20220109)</div>
                 </div>
             </h2>
         </div>
@@ -110,11 +208,11 @@
                 <div class="four wide column">
 
                     <div class="ui checkbox">
-                        <input type="checkbox" name="changeWord"  tabindex="0" class="hidden" id="God">
+                        <input type="checkbox" name="changeWord" tabindex="0" class="hidden" id="God" checked>
                         <label>하느님 ▶ 하나님</label>
                     </div><br />
                     <div class="ui checkbox">
-                        <input type="checkbox" name="changeWord" id="Jehovah">
+                        <input type="checkbox" name="changeWord" id="Jehovah" checked>
                         <label>야훼 ▶ 여호와</label>
                     </div><br />
                     <div class="ui checkbox">
@@ -147,7 +245,7 @@
                     <div class="sub header">Make Subtitle</div>
                 </div>
             </h2>
-        </div>        
+        </div>
 
         <div class="ui attached fluid equal width segment">
             <div class="content">
@@ -164,20 +262,12 @@
                         <option value="LAYOUT_4x3">레이아웃 4:3</option>
                     </select>
 
-<!-- // for Mac
                     <select id="LyricsFontface" onchange="getSetValues()" class="ui selection dropdown">
-                      <option value="GyeonggiTitleB">경기천년제목</option>
-                      <option value="NanumBarunGothicBold">나눔바른고딕</option>
-                      <option value="NanumGothicExtraBold">나눔고딕</option>
-                      <option value="NanumMyeongjoExtraBold">나눔명조</option>
-                    </select>
- -->
-
-                    <select id="LyricsFontface" onchange="getSetValues()" class="ui selection dropdown">
-                      <option value="경기천년제목 Bold">경기천년제목</option>
-                      <option value="나눔바른고딕">나눔바른고딕</option>
-                      <option value="나눔고딕 ExtraBold">나눔고딕</option>
-                      <option value="나눔명조 ExtraBold">나눔명조</option>
+                        <option value="G마켓 산스 Medium">G마켓 산스</option>
+                        <option value="경기천년제목 Bold">경기천년제목</option>
+                        <option value="나눔바른고딕">나눔바른고딕</option>
+                        <option value="나눔고딕 ExtraBold">나눔고딕</option>
+                        <option value="나눔명조 ExtraBold">나눔명조</option>
                     </select>
 
                     <select id="line" onchange="getSetValues()" class="ui selection dropdown">
@@ -188,6 +278,29 @@
                         <option value='5'>5줄</option>
                         <option value='6'>6줄</option>
                     </select>
+
+                    <select id="color-select" onchange="getSetValues()" class="ui selection dropdown">
+                        <option value='default' selected>=== 배경색 ===</option>
+                        <option value='Self'>직접선택 ▶ </option>
+                        <option value='Green'>Green</option>
+                        <option value='Orange'>Orange</option>
+                        <option value='Black'>Black</option>
+                        <option value='Pink'>Pink</option>
+                        <option value='White'>White</option>
+                        <option value='Blue'>Blue</option>
+                        <option value='Yellow'>Yellow</option>
+                        <option value='Gray'>Gray</option>
+
+                    </select>
+
+
+                    <div class="ui labeled input">
+
+                        <input type="text" id="color-picker" class="ui large transparent input minicolors" data-control="hue" value="#00FF00" style="min-width:120px;text-transform: uppercase;">
+
+                    </div>
+
+
 
                     <div class="ui divider"></div>
 
@@ -215,16 +328,16 @@
 
                     <div class="ui labeled input">
                         <div class="ui label">폰트크기</div>
-                        <input id="LyricsFontSize" type="number" value='36' min='20' max='50' step='1' onchange="getSetValues()" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
-                    </div>                    
+                        <input id="LyricsFontSize" type="number" value='32' min='20' max='50' step='1' onchange="getSetValues()" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                    </div>
 
                     <div class="ui bible buttons">
                         <button class="ui red basic button" onClick="setInitialize()">기본값(초기화)</button>
                     </div>
                 </div>
             </div>
-        </div>        
- 
+        </div>
+
         <div class="ui divider"></div>
 
         <div class="ui stackable grid">
@@ -232,11 +345,11 @@
             <div class="ten wide column">
                 <div class="ui form">
                     <div class="field">
-                    	<div id="history"></div>
+                        <div id="history"></div>
                         <textarea id="content" placeholder="자막으로 만들 내용을 입력하세요."></textarea>
                     </div>
                 </div>
-                <button class="ui bottom attached fluid green massive button" onclick="createSubTitle()">
+                <button class="ui bottom attached fluid green massive button" onclick="createSubTitle()" id="LyricsDownBtn">
                     <i class="icon download"></i>
                     <span id="LyricsBtnMsg"></span>자막 다운로드
                 </button>
@@ -244,41 +357,88 @@
 
             <div class="six wide column">
                 <h4 class="ui dividing green header">Preview</h4>
-                        <table class="ui inverted green unstackable table">
-                            <tr class="center aligned">
-                              <td class="bottom aligned outlineText">녹색배경 투명 자막<br />흰글씨(테두리) 자막</td>
-                            </tr>
-                        </table>
+                <table class="ui inverted green unstackable table">
+                    <tr class="center aligned">
+                        <td class="bottom aligned outlineText" id="preview">자막미리보기입니다<br />흰글씨 그림자 효과</td>
+                    </tr>
+                </table>
 
             </div><!-- four wide column -->
 
-        </div> 
+        </div>
     </div><!-- ui form -->
-</div>
+    </div>
 
-    <script src="js/text2ppt.js?version=1.5"></script>
-    <script src="js/bible2ppt.js?version=1.5"></script>
-    
+
+
+
+    <div class="ui form">
+        <div class="field">
+
+        </div>
+    </div>
+
+
+
+
+
     <script>
-    // 쿠키 삭제 함수
-    function cookieRemove() {
+        $("#color-picker").on("propertychange change keyup paste input", function() {
+            var currentVal = $(this).val();
+            $("#preview").css('backgroundColor', currentVal);
+            $("#LyricsDownBtn").css('backgroundColor', currentVal);
+            //$("#color-select option[value='Green']").prop("selected",true);
+        });
+    </script>
 
-        // 변수를 선언한다.
-        var date = new Date();
-        date.setDate(date.getDate() - 1);
+    <!--
+    <script src="js/text2ppt.js?version=0.1" id="text2ppt-js"></script>
+    <script src="js/bible2ppt.js?version=0.1" id="bible2ppt-js"></script>
+    -->
 
-        var willCookie = "";
-        willCookie += "CookieName=Value;";
-        willCookie += "Expires=" + "Thu, 01 Jan 1999 00:00:10 GMT";
+    <script>
+        $(document).ready(function() {
 
-        // 쿠키를 집어넣는다.
-        document.cookie = willCookie;
+            $("#LyricsDownBtn").css('backgroundColor', '#00FF00');
 
-        // 출력한다.
-        console.log(document.cookie);
-    }
-    
-    cookieRemove();
+            $.ajax({
+                type: "GET",
+                url: "js/text2ppt.js",
+                dataType: "script",
+                cache: false
+            });
+
+
+            $.ajax({
+                type: "GET",
+                url: "js/bible2ppt.js",
+                dataType: "script",
+                cache: false
+            });
+
+        });
+    </script>
+
+    <script>
+        // 쿠키 삭제 함수
+        function cookieRemove() {
+
+            // 변수를 선언한다.
+            var date = new Date();
+            date.setDate(date.getDate() - 1);
+
+            var willCookie = "";
+            willCookie += "CookieName=Value;";
+            willCookie += "Expires=" + "Thu, 01 Jan 1999 00:00:10 GMT";
+
+            // 쿠키를 집어넣는다.
+            document.cookie = willCookie;
+
+            // 출력한다.
+            console.log(document.cookie);
+        }
+
+        cookieRemove();
     </script>
 
 </body>
