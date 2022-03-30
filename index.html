@@ -236,7 +236,6 @@ White	#FFFFFF
 
     <!-- BIBLE to PPT -->
     <div class="ui raised padded container segment">
-
         <div class="ui attached message">
             <h2 class="ui blue header">
                 <i class="book icon"></i>
@@ -246,6 +245,11 @@ White	#FFFFFF
                 </div>
             </h2>
         </div>
+
+        <div class="ui dimmer bible">
+            <div class="ui indeterminate massive text loader">PPT 생성중...</div>
+        </div>
+
 
         <div class="ui attached fluid equal width segment form">
             <div class="fields">
@@ -339,6 +343,10 @@ White	#FFFFFF
                 </div>
             </h2>
         </div>
+        
+        <div class="ui dimmer subtitle">
+            <div class="ui indeterminate massive text loader">PPT 생성중...</div>
+        </div>        
 
         <div class="ui attached fluid equal width segment">
             <div class="content">
@@ -532,6 +540,8 @@ White	#FFFFFF
 
 
         $(document).ready(function() {
+        	$('.ui.dimmer.bible').dimmer('hide'); // 로딩중 닫기....
+        	$('.ui.dimmer.subtitle').dimmer('hide');
 
             $.ajax({
                 type: "GET",
@@ -542,7 +552,7 @@ White	#FFFFFF
 
             $.ajax({
                 type: "GET",
-                url: "js/bible2ppt.js?ver=1.8",
+                url: "js/bible2ppt.js?ver=2.0",
                 dataType: "script",
                 cache: false
             });
