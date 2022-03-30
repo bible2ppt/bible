@@ -245,6 +245,8 @@ function readTextFile(fileName, selectVersion, selectBook, selectChapter) { //  
 
             //pptx.writeFile(selectVersion + '_' +selectBook + '_' + selectChapter + '장');
             pptx.writeFile({ fileName: selectVersion + '_' +selectBook + '_' + selectChapter + '장' });
+            
+            $('.ui.dimmer.bible').dimmer('hide');
             //return false;
 
         }); // getFile
@@ -274,6 +276,8 @@ function readExecute() {
     if(confirm($("#loadVersion").children("option:selected").text() + " | " + $('#book').val() + " " + $('#chapter').val() + "장을 다운로드 하시겠습니까?") == false) {
         return false;
     }
+    
+    $('.ui.dimmer.bible').dimmer('show');
 
     var selectVersion = $("#loadVersion").val(); // 역본이름
     if(show_debug) console.log(selectVersion);
