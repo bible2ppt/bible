@@ -1,6 +1,7 @@
 /**
 *. make bible to ppt
 */
+    var show_debug = false;
     var bibleArrays = {"창세기":50,"출애굽기":40,"레위기":27,"민수기":36,"신명기":34,"여호수아":24,"사사기":21,"룻기":4,"사무엘상":31,"사무엘하":24,"열왕기상":22,"열왕기하":25,"역대상":29,"역대하":36,"에스라":10,"느헤미야":13,"에스더":10,"욥기":42,"시편":150,"잠언":31,"전도서":12,"아가":8,"이사야":66,"예레미야":52,"예레미야애가":5,"에스겔":48,"다니엘":12,"호세아":14,"요엘":3,"아모스":9,"오바댜":1,"요나":4,"미가":7,"나훔":3,"하박국":3,"스바냐":3,"학개":2,"스가랴":14,"말라기":4,"마태복음":28,"마가복음":16,"누가복음":24,"요한복음":21,"사도행전":28,"로마서":16,"고린도전서":16,"고린도후서":13,"갈라디아서":6,"에베소서":6,"빌립보서":4,"골로새서":4,"데살로니가전서":5,"데살로니가후서":3,"디모데전서":6,"디모데후서":4,"디도서":3,"빌레몬서":1,"히브리서":13,"야고보서":5,"베드로전서":5,"베드로후서":3,"요한1서":5,"요한2서":1,"요한3서":1,"유다서":1,"요한계시록":22}     
 
 
@@ -11,7 +12,7 @@
     var oldAndNewArrays = oldArrays.concat(newArrays)//두 배열 합치기       
 
     $.each(bibleArrays, function(index, item) {
-        //console.log("bibleArrays: " + index);
+        //if(show_debug) console.log("bibleArrays: " + index);
         var option = $("<option>"+index+"</option>");
         $('#book').append(option);             
     });
@@ -19,7 +20,7 @@
     function oldAndNewChange(){ // 신구약 선택
         //$('#chapter').prop('disabled', false);
         var selectItem = $("#oldAndNew").val();
-        console.log(selectItem);
+        if(show_debug) console.log(selectItem);
         $('#book').empty();
         $('#chapter').prop('disabled', false);
         $('#btn1').prop('disabled', false);
@@ -70,7 +71,7 @@
             var option = $("<option>"+item+"</option>");
             $('#chapter').append(option);             
         });
-        //console.log(num);
+        //if(show_debug) console.log(num);
         if(chapter == '') { // 선택되지 않거나 정의되지 않았을 때
             var option = $("<option>--장--</option>");
             $('#chapter').append(option);  
@@ -105,7 +106,7 @@ function readTextFile(fileName, selectVersion, selectBook, selectChapter) { //  
 
 
             var bibleName = selectVersion; //바이블 역본 이름
-            console.log ("bibleName :" + bibleName);              
+            if(show_debug) console.log ("bibleName :" + bibleName);              
             
             // 폰트 및 색상
             var FONT_FACE = '나눔바른고딕'; //폰트지정
@@ -184,13 +185,13 @@ function readTextFile(fileName, selectVersion, selectBook, selectChapter) { //  
 
             data = data.trim(); //앞 뒤 공백 제거
 
-            console.log(data);
+            if(show_debug) console.log(data);
 
             var lines = data.split("\n");
 
             lines = $.map(lines, $.trim); // 각 array 앞뒤 공백 제거
 
-            console.log(lines);
+            if(show_debug) console.log(lines);
 
             var lineLength = lines.length; // 총길이
 
@@ -274,17 +275,17 @@ function readExecute() {
     }
 
     var selectVersion = $("#loadVersion").val(); // 역본이름
-    console.log(selectVersion);
+    if(show_debug) console.log(selectVersion);
     var selectBook = $("#book").val(); // 책이름
     var selectChapter = $("#chapter").val(); // 장
 
     const found = bibleNumberArray.find(element => element.name == selectBook);
     var selectBookNum = found.number;
-    console.log(found.name + found.number);
+    if(show_debug) console.log(found.name + found.number);
 
     // "bibleDB" + "/" + "공동번역" + "/" + "4" + "_" + selectBook + "_" + selectChapter + "장.txt";
 
-    var dataUrl = encodeURI("bibleDB" + "/" + selectVersion + "/" + selectBookNum + "_" + selectBook + "_" + selectChapter + "장.txt");
-    console.log(dataUrl);
+    var dataUrl = encodeURI("bibleDB" + "/") + selectVersion + encodeURI("/" + selectBookNum + "_" + selectBook + "_" + selectChapter + "장.txt");
+    if(show_debug) console.log(dataUrl);
     readTextFile(dataUrl, selectVersion, selectBook, selectChapter); // 텍스트 파일 읽기         
 }
