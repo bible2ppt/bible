@@ -246,6 +246,7 @@ function getSetValues() {
 }
 
 function setInitialize() {
+	$('.ui.dimmer.subtitle').dimmer('hide');
     //$("#defaultTheme").addClass('active').val($("#defaultTheme").id).siblings().removeClass('active').val(''); // 테마 초기화
     $("#left").addClass('active').val($("#left").id).siblings().removeClass('active').val(''); // 본문 정렬 초기화  
     $("#bottom").addClass('active').val($("#bottom").id).siblings().removeClass('active').val(''); // 본문 위치 초기화
@@ -315,6 +316,7 @@ function assembleTextBox() {
 
 // 자막 생성 함수
 function createSubTitle() {
+	$('.ui.dimmer.subtitle').dimmer('show');
 /*	
     //////////////// 수정 전 ///////////////
     var content = $("#content").val();
@@ -570,6 +572,7 @@ function createSubTitle() {
 
     // PPT 파일 다운로드
     pres.writeFile({ fileName: lyricsTitle + "_" + getTimestamp() }, function(blob){console.log(blob);},'blob');
+    $('.ui.dimmer.subtitle').dimmer('hide');
     copyText();
 
 }
