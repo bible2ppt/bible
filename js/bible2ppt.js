@@ -33,7 +33,7 @@
         $.each(selectedArray, function(index, item) {
             var option = $("<option>"+item+"</option>");
             $('#book').append(option);         
-        });
+        });      
         bookChange();
     }        
 
@@ -243,7 +243,8 @@ function readTextFile(fileName, selectVersion, selectBook, selectChapter) { //  
             }); //Each
 
 
-            pptx.writeFile(selectVersion + '_' +selectBook + '_' + selectChapter + '장');
+            //pptx.writeFile(selectVersion + '_' +selectBook + '_' + selectChapter + '장');
+            pptx.writeFile({ fileName: selectVersion + '_' +selectBook + '_' + selectChapter + '장' });
             //return false;
 
         }); // getFile
