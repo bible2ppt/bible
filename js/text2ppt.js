@@ -478,9 +478,9 @@ function createSubTitle() {
     }
 
     if (highlightColor === "none") { //하이라이트가 없을때는 아웃라인과 라인스페이스 추가
-    	masterOpt.outline = {size: 1, color:'000000'}; //{size: 0.5, color:'000000'};
+    	masterOpt.outline = {size: 0.5, color:'000000'}; //{size: 0.5, color:'000000'};
     	masterOpt.lineSpacing = LyricsFontSize * 1.025;
-    	masterOpt.glow = {size:4, opacity:1.0, color:glowColor}; //{size:2, opacity:1.0, color:glowColor};
+    	masterOpt.glow = {size:2, opacity:1.0, color:glowColor}; //{size:2, opacity:1.0, color:glowColor};
     }
     
     if (highlightColor === "#FFFF00" || highlightColor === "#FFFFFF") { // 하이라이트가 노란색이나 흰색일 때 글자색 검정
