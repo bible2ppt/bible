@@ -257,7 +257,7 @@ function setInitialize() {
     $('#LyricsLayout').dropdown('restore defaults'); // 레이아웃 초기화
     $('#LyricsFontface').dropdown('restore defaults'); // 폰트 페이스 초기화
     $('#LyricsLayout').dropdown('restore defaults');
-    $('#LyricsFontSize').val('28'); // 폰트 크기 초기화
+    $('#LyricsFontSize').val('30'); // 폰트 크기 초기화
     $('#highlight').dropdown('restore defaults'); // 하이라이트 초기화
     $("#color-picker").val('#00FF00'); // 배경 색상 초기화  
     $("#color-picker").trigger('keyup'); // blur, focus, load, resize, scroll, unload, beforeunload, click, dblclick, mousedown, mouseup, mousemove, mouseover, mouseout, mouseenter, mouseleave, change, select, submit, keydown, keypress, and keyup
