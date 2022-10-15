@@ -112,7 +112,7 @@ function readTextFile(fileName, selectVersion, selectBook, selectChapter) { //  
             var FONT_FACE = '나눔바른고딕'; //폰트지정
             var COLOR_TITLE = 'FFFFFF';
             var COLOR_BODY = 'FFFFFF';
-            var BibleFontSize = 36;
+            var BibleFontSize = 40;
 
 
 
