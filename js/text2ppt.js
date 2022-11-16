@@ -259,11 +259,11 @@ function setInitialize() {
     $('#LyricsLayout').dropdown('restore defaults');
     $('#LyricsFontSize').val('34'); // 폰트 크기 초기화
     $('#highlight').dropdown('restore defaults'); // 하이라이트 초기화
-    $("#color-picker").val('#00FF00'); // 배경 색상 초기화  
+    $("#color-picker").val('#00C800'); // 배경 색상 초기화  
     $("#color-picker").trigger('keyup'); // blur, focus, load, resize, scroll, unload, beforeunload, click, dblclick, mousedown, mouseup, mousemove, mouseover, mouseout, mouseenter, mouseleave, change, select, submit, keydown, keypress, and keyup
-    $("#preview").css('backgroundColor', '#00FF00');
+    $("#preview").css('backgroundColor', '#00C800');
     $("#sampleText").css('backgroundColor', '#000000');
-    $("#LyricsDownBtn").css('backgroundColor', '#00FF00');
+    $("#LyricsDownBtn").css('backgroundColor', '#00C800');
     $("#LyricsDownBtn").css('color', '#FFFFFF');
 
     getSetValues();
@@ -491,7 +491,7 @@ function createSubTitle() {
 	                	
     pres.defineSlideMaster({
         title: 'PLACEHOLDER_SLIDE',
-        /*background: { color: '00FF00' },
+        /*background: { color: '00C800' },
         //009933, 00B140
         파워포인트로 만들 경우Green Screen as RGB Color Value: 0, 177, 64
         인쇄용, 가림막으로 만들 경우Green Screen as CMYK Color Value: 81, 0, 92, 0
