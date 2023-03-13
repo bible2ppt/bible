@@ -369,8 +369,9 @@ function createSubTitle() {
     // ===================== 자막 PPTX 관련 =============================
     // PPT 파일 이름 셋팅
     //var lyricsTitle = resultContent[0][0].replace(/ /g, '').substring(0, 6);
-      var lyricsTitle = resultContent[0].replace(/ /g, '').slice(0, 6);
-
+      var lyricsTitle = resultContent[0].replace(/\n|\r|\s*/g, ""); //replace(/\n/g, ""); //줄바꿈 없애기
+      lyricsTitle = lyricsTitle.replaceAll(" ", "").slice(0, 6); //replace(/ /g, '').slice(0, 6); //
+	
     // align 정렬 값 가져오기
     // 본문정렬 (left, center, right, justify)
       var defaultAlign = "left"; //default
