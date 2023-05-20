@@ -125,7 +125,8 @@ function readTextFile(fileName, selectVersion, selectBook, selectChapter) { //  
             // 마스터 슬라이드 정의하기
             pptx.defineSlideMaster({
                 title: 'MASTER_BIBLE',
-                background: bibleBkg, // 또는 크로마키 초록색 { fill: '00FF00' },
+                // background: bibleBkg, <- 배경이미지 경로
+                background: { color: "334655", transparency: 0 },
                 //margin:  [ 0.5, 0.25, 1.0, 0.25 ], // 1cm * 28.346 LRBT 왼 오 아 위
                 //slideNumber: { x:0.6, y:7.0, color:'FFFFFF', align:'left', valign:'middle', fontFace:FONT_FACE, fontSize:12 },
                 objects: [
